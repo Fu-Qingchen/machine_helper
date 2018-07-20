@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_design"
+        android:checked="true"
+        android:icon="@drawable/sharp_settings_24"
+        android:title="@string/main_Design" />
+    <item
+        android:id="@+id/menu_calculation"
+        android:icon="@drawable/sharp_functions_24"
+        android:title="@string/main_Calculation" />
+    <item
+        android:id="@+id/menu_info"
+        android:icon="@drawable/sharp_info_24"
+        android:title="@string/main_Info" />
+</menu>
