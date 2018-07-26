@@ -28,7 +28,7 @@
                 android:text="@string/main_Calculation"
                 android:textColor="@color/black"
                 android:textSize="24sp"
-                app:layout_scrollFlags="scroll" />
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
 
         </android.support.design.widget.AppBarLayout>
 
