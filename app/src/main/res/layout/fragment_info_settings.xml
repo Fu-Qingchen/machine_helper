@@ -6,9 +6,64 @@
     tools:context=".InfoSettingsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="9" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            style="@style/Main_LinearLayout">
+
+            <LinearLayout
+                android:id="@+id/language_linearLayout"
+                style="@style/Input_LinearLayout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/info_ImageView_Left"
+                    android:src="@drawable/sharp_translate_24" />
+
+                <LinearLayout style="@style/info_LinearLayout">
+
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/settings_Language" />
+
+                    <View style="@style/info_View" />
+
+                    <TextView
+                        android:id="@+id/language_textView"
+                        style="@style/info_textView_button"
+                        android:text="@string/language_Follow_System" />
+                </LinearLayout>
+
+                <ImageView style="@style/info_ImageView_Right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nightMode_linearLayout"
+                style="@style/Input_LinearLayout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/info_ImageView_Left"
+                    android:src="@drawable/sharp_brightness_2_24" />
+
+                <LinearLayout style="@style/info_LinearLayout">
+
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/settings_Theme" />
+
+                    <View style="@style/info_View" />
+
+                    <TextView
+                        android:id="@+id/nightMode_textView"
+                        style="@style/info_textView_button"
+                        android:text="@string/Theme_Automatic" />
+                </LinearLayout>
+
+                <ImageView style="@style/info_ImageView_Right" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

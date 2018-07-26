@@ -46,7 +46,7 @@ public class CalculationPaperAdaptter extends FragmentPagerAdapter {
             case 2:
                 return mContext.getString(R.string.calculation_Differentiation);
             case 3:
-                return mContext.getString(R.string.calculation_Safe_coefficient);
+                return mContext.getString(R.string.calculation_Matrix);
             default:
                 return null;
         }

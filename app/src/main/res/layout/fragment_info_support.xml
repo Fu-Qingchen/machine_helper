@@ -6,9 +6,114 @@
     tools:context=".InfoSupportFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="11" />
+        android:layout_height="match_parent">
 
+        <LinearLayout style="@style/Main_LinearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/support_intro"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/language_linearLayout"
+                style="@style/Input_LinearLayout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/info_ImageView_Left"
+                    android:src="@drawable/ic_timg" />
+
+                <LinearLayout style="@style/info_LinearLayout">
+
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/support_Red_Envelope" />
+
+                    <View style="@style/info_View" />
+
+                    <TextView
+                        style="@style/info_textView_button"
+                        android:text="@string/redEnvelope_intro" />
+                </LinearLayout>
+
+                <ImageView style="@style/info_ImageView_Right" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/info_textView_top"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/support_Donations" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/donations_intro"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/donations_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/share"
+                        android:text="@string/donations_alipay" />
+
+                    <Button
+                        android:id="@+id/donation_wachat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/share"
+                        android:text="@string/donation_wachat" />
+
+                    <Button
+                        android:id="@+id/donation_QQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/share"
+                        android:text="@string/donation_QQ" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/info_ImageView_Left"
+                    android:src="@drawable/v5" />
+
+                <LinearLayout style="@style/info_LinearLayout">
+
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/developer_name" />
+
+                    <View style="@style/info_View" />
+
+                    <TextView
+                        style="@style/info_textView_button"
+                        android:text="@string/donation_thanks" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

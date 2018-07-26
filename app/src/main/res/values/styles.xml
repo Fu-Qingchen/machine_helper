@@ -30,7 +30,9 @@
         <item name="android:layout_margin">8dp</item>
         <item name="android:background">@drawable/input</item>
         <item name="android:clickable">true</item>
+        <item name="android:state_activated">true</item>
         <item name="android:padding">16dp</item>
+        <item name="android:selectable">true</item>
     </style>
 
     <style name="Output_CardView" parent="CardView">
@@ -73,5 +75,48 @@
         <item name="android:background">@drawable/share</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
+        <item name="android:selectable">true</item>
+    </style>
+
+    <style name="info_ImageView_Left">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="info_LinearLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="info_textView_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="info_View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="info_textView_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="info_ImageView_Right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:src">@drawable/baseline_keyboard_arrow_right_24</item>
     </style>
 </resources>

@@ -6,9 +6,331 @@
     tools:context=".DesignBearingFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="4" />
+        android:layout_height="match_parent">
 
+        <LinearLayout style="@style/Main_LinearLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/bearing_intro"
+                android:layout_margin="16dp"/>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/bearing_type"
+                        style="@style/Normal"
+                        android:hint="@string/bearing_type"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_FR"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_FR"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_FA"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_FA"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_D"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_D"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_i"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_i"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_Cr"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_Cr"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_C0r"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_C0r"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_e"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_e"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_fp"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_fp"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_X"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_X"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_Y"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_Y"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <TextView
+                    android:id="@+id/bearing_P"
+                    style="@style/Output_TextView"
+                    android:layout_margin="16dp"
+                    android:text="@string/bearing_P" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_ft"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_ft"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bearing_n"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_n"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/bearing_L"
+                        style="@style/Output_TextView"
+                        android:text="@string/bearing_L" />
+
+                    <TextView
+                        android:id="@+id/bearing_Lh"
+                        style="@style/Output_TextView"
+                        android:text="@string/bearing_Lh" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/Normal"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/delete"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_delete" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_delete" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/share"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_share" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_share" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

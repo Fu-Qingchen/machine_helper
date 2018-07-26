@@ -6,9 +6,202 @@
     tools:context=".CalculationInterpolationFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="5" />
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/Main_LinearLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/interpolation_Dimension"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/interpolation_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/share"
+                    android:text="@string/interpolation_1" />
+
+                <!--<Button-->
+                <!--android:id="@+id/interpolation_2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:background="@drawable/share"-->
+                <!--android:text="@string/interpolation_2" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/interpolation_3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:background="@drawable/share"-->
+                <!--android:text="@string/interpolation_3" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/x0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/interpolation_x00"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/x1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/interpolation_x01"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/y0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/interpolation_y00"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/y1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/interpolation_y01"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/interpolation_x"
+                        style="@style/Normal"
+                        android:hint="@string/interpolation_x"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <TextView
+                    android:id="@+id/interpolation_result"
+                    style="@style/Output_TextView"
+                    android:layout_margin="16dp"
+                    android:text="@string/calculation_result" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                style="@style/Normal"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/delete"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_delete" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_delete" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/copy"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_content_copy" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_copy" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

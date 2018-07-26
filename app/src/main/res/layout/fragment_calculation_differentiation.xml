@@ -6,9 +6,102 @@
     tools:context=".CalculationDifferentiationFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="7" />
+        android:layout_height="match_parent">
 
+        <LinearLayout style="@style/Main_LinearLayout">
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/differentiation_function"
+                        style="@style/Normal"
+                        android:hint="@string/calculation_function"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/differentiation_x"
+                        style="@style/Normal"
+                        android:hint="@string/differentiation_x"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <TextView
+                    android:id="@+id/differentiation_result"
+                    style="@style/Output_TextView"
+                    android:layout_margin="16dp"
+                    android:text="@string/calculation_result" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                style="@style/Normal"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/delete"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_delete" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_delete" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/copy"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_content_copy" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_copy" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

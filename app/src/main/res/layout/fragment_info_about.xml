@@ -13,41 +13,208 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <LinearLayout style="@style/Main_LinearLayout">
 
+            <LinearLayout
+                android:id="@+id/language_linearLayout"
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pic_key" />
+                <ImageView
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/web_hi_res_512_round"
+                    android:layout_margin="16dp"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pic_key" />
+                <TextView
+                    android:id="@+id/language_textView"
+                    style="@style/info_textView_button"
+                    android:text="@string/about_intro" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pic_key" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pic_key" />
+                <TextView
+                    style="@style/info_textView_top"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/about_Contact_Feedback" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pic_key" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/contact_Intro"
+                    android:textSize="14sp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pic_key" />
+                <LinearLayout
+                    android:id="@+id/contact_Rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_stars_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/contact_Rate"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        style="@style/info_ImageView_Right"
+                        android:layout_weight="0"/>
+                </LinearLayout>
+                <View
+                    style="@style/info_View"/>
+                <LinearLayout
+                    android:id="@+id/contact_Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_4975848bga0862c4249ba690_jpg"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/contact_Contact"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        style="@style/info_ImageView_Right"
+                        android:layout_weight="0"/>
+                </LinearLayout>
+                <View
+                    style="@style/info_View"/>
+                <LinearLayout
+                    android:id="@+id/contact_Feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/baseline_email_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/contact_Feedback"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        style="@style/info_ImageView_Right"
+                        android:layout_weight="0"/>
+                </LinearLayout>
+                <View
+                    style="@style/info_View"/>
+                <LinearLayout
+                    android:id="@+id/contact_My_Website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/baseline_web_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/contact_My_Website"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        style="@style/info_ImageView_Right"
+                        android:layout_weight="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/info_textView_top"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/about_Development_Related" />
+                <LinearLayout
+                    android:id="@+id/development_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_link_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/development_code"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        style="@style/info_ImageView_Right"
+                        android:layout_weight="0"/>
+                </LinearLayout>
+                <View
+                    style="@style/info_View"/>
+                <LinearLayout
+                    android:id="@+id/development_Components"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/round_copyright_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+                    <TextView
+                        style="@style/info_textView_top"
+                        android:text="@string/development_Components"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        style="@style/info_ImageView_Right"
+                        android:layout_weight="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/info_textView_top"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/about_State" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/state_main"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

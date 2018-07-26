@@ -6,9 +6,572 @@
     tools:context=".DesignGearFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="2" />
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/Main_LinearLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/gear_hardness"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/gear_soft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/share"
+                    android:text="@string/gear_soft" />
+
+                <!--<Button-->
+                <!--android:id="@+id/gear_hard"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:background="@drawable/share"-->
+                <!--android:text="@string/gear_hard" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_sigmaFP1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_sigmaFP1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_sigmaFP2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_sigmaFP2"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/vbelt_n1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_sigmaFH"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/vbelt_n2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_T1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_T2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_T2"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_psi_d"
+                            style="@style/Normal"
+                            android:hint="@string/gear_psi_d"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_i"
+                            style="@style/Normal"
+                            android:hint="@string/gear_i"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_beta0"
+                            style="@style/Normal"
+                            android:hint="@string/gear_beta0"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_KA"
+                            style="@style/Normal"
+                            android:hint="@string/gear_KA"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_Kv"
+                            style="@style/Normal"
+                            android:hint="@string/gear_Kv"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_K_beta"
+                            style="@style/Normal"
+                            android:hint="@string/gear_K_beta"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_K_alpha"
+                            style="@style/Normal"
+                            android:hint="@string/gear_K_alpha"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <TextView
+                    android:id="@+id/gear_d10"
+                    style="@style/Output_TextView"
+                    android:layout_margin="16dp"
+                    android:text="@string/gear_d10" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_z1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_z1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_z2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_z2"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/gear_mn"
+                        style="@style/Output_TextView"
+                        android:text="@string/gear_mn" />
+
+                    <TextView
+                        android:id="@+id/gear_a"
+                        style="@style/Output_TextView"
+                        android:text="@string/gear_a" />
+
+
+                    <TextView
+                        android:id="@+id/vbelt_delta"
+                        style="@style/Output_TextView"
+                        android:text="@string/gear_beta" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_b1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_b1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_b2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_b2"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_d1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_d1" />
+
+                        <TextView
+                            android:id="@+id/gear_d2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/gear_d2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_da1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_da1" />
+
+                        <TextView
+                            android:id="@+id/gear_da2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/gear_da2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_df1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_df1" />
+
+                        <TextView
+                            android:id="@+id/gear_df2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/gear_df2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_YFS1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_YFS1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_YFS2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_YFS2"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView style="@style/Output_CardView">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_sigma_F1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:text="@string/gear_sigma_F1" />
+
+                        <TextView
+                            android:id="@+id/gear_sigma_F1_safe"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/app_unsafe" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_sigma_F2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:text="@string/gear_sigma_F2" />
+
+                        <TextView
+                            android:id="@+id/gear_sigma_F2_safe"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/app_unsafe" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/Normal"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/delete"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_delete" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_delete" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/share"
+                        style="@style/share_LinearLayout">
+
+                        <ImageView
+                            style="@style/share_ImageView"
+                            android:src="@drawable/ic_shortcut_share" />
+
+                        <TextView
+                            style="@style/share_TextView"
+                            android:text="@string/app_share" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
