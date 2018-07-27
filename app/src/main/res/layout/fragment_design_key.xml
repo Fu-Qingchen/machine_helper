@@ -25,29 +25,38 @@
                     android:text="@string/key_type"
                     android:textSize="16sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/key_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/key_A" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/key_A"
+                    android:textSize="20sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/key_B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/key_B" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/key_B"
+                    android:textSize="20sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/key_C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/key_C" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/key_C"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -213,26 +222,35 @@
                     android:text="@string/key_style"
                     android:textSize="16sp" />
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/key_soft" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/key_soft"
+                    android:textSize="20sp" />
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/key_normal" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/key_normal"
+                    android:textSize="20sp" />
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/key_hard" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/key_hard"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <android.support.v7.widget.CardView style="@style/Output_CardView">
@@ -283,8 +301,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/key_GB"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:text="@string/key_GB" />
+
             <LinearLayout
                 style="@style/Normal"
                 android:layout_marginTop="8dp"

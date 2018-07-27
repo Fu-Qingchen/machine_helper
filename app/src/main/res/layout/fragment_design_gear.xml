@@ -25,13 +25,16 @@
                     android:text="@string/gear_hardness"
                     android:textSize="16sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/gear_soft"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/share"
-                    android:text="@string/gear_soft" />
+                    android:text="@string/gear_soft"
+                    android:textSize="20sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
 
                 <!--<Button-->
                 <!--android:id="@+id/gear_hard"-->

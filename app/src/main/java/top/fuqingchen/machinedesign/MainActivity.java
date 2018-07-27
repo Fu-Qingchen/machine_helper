@@ -1,6 +1,5 @@
 package top.fuqingchen.machinedesign;
 
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -26,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
             fragment = calculationFragment;
         }
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                TextView textView = (TextView) findViewById(R.id.main_top_textView);
+                TextView textView = findViewById(R.id.main_top_textView);
 
                 switch (item.getItemId()) {
                     case R.id.menu_design:

@@ -2,11 +2,14 @@
 <resources>
     <string name="app_name">机械设计</string>
     <string name="app_Recommend">推荐</string>
-    <string name="app_delete">全部清除</string>
+    <string name="app_delete">清除结果</string>
     <string name="app_share">分享结果</string>
     <string name="app_copy">复制结果</string>
     <string name="app_safe">安全</string>
     <string name="app_unsafe">不安全</string>
+    <string name="app_unWrite">没写→_→</string>
+    <string name="copy_done">复制好了(=・ω・=)</string>
+    <string name="copy_false">你算都没算就叫我复制(-_-#)</string>
     <string name="app_coming_soon">尽请期待</string>
     <string name="developer_name">Fu_Qingchen</string>
     <string name="main_Design">设计</string>

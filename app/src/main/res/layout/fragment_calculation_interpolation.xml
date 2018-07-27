@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CalculationInterpolationFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalculationInterpolationFragment">
@@ -25,13 +26,16 @@
                     android:text="@string/interpolation_Dimension"
                     android:textSize="16sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/interpolation_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@drawable/share"
-                    android:text="@string/interpolation_1" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/interpolation_1"
+                    android:textSize="20sp" />
 
                 <!--<Button-->
                 <!--android:id="@+id/interpolation_2"-->
@@ -61,11 +65,12 @@
                     android:orientation="vertical">
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interpolation_input_x0"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <AutoCompleteTextView
-                            android:id="@+id/x0"
+                            android:id="@+id/interpolation_x0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/interpolation_x00"
@@ -75,11 +80,12 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interpolation_input_x1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <AutoCompleteTextView
-                            android:id="@+id/x1"
+                            android:id="@+id/interpolation_x1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/interpolation_x01"
@@ -97,11 +103,12 @@
                     android:orientation="vertical">
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interpolation_input_y0"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <AutoCompleteTextView
-                            android:id="@+id/y0"
+                            android:id="@+id/interpolation_y0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/interpolation_y00"
@@ -111,11 +118,12 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interpolation_input_y1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <AutoCompleteTextView
-                            android:id="@+id/y1"
+                            android:id="@+id/interpolation_y1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/interpolation_y01"
@@ -131,7 +139,9 @@
                 style="@style/Input_LinearLayout"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout style="@style/Normal">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/interpolation_input_x"
+                    style="@style/Normal">
 
                     <AutoCompleteTextView
                         android:id="@+id/interpolation_x"
@@ -168,7 +178,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/delete"
+                        android:id="@+id/interpolation_delete"
                         style="@style/share_LinearLayout">
 
                         <ImageView
@@ -188,7 +198,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/copy"
+                        android:id="@+id/interpolation_copy"
                         style="@style/share_LinearLayout">
 
                         <ImageView
