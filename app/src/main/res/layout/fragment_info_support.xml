@@ -20,7 +20,7 @@
                 android:textSize="14sp" />
 
             <LinearLayout
-                android:id="@+id/language_linearLayout"
+                android:id="@+id/support_Red_Envelope"
                 style="@style/Input_LinearLayout"
                 android:orientation="horizontal">
 
@@ -67,29 +67,11 @@
                     android:layout_margin="8dp"
                     android:orientation="horizontal">
 
-                    <Button
+                    <TextView
                         android:id="@+id/donations_alipay"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:background="@drawable/share"
-                        android:text="@string/donations_alipay" />
-
-                    <Button
-                        android:id="@+id/donation_wachat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:background="@drawable/share"
-                        android:text="@string/donation_wachat" />
-
-                    <Button
-                        android:id="@+id/donation_QQ"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:background="@drawable/share"
-                        android:text="@string/donation_QQ" />
+                        android:layout_width="75dp"
+                        android:text="@string/donations_alipay"
+                        style="@style/Button"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout

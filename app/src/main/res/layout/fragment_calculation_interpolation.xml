@@ -4,7 +4,9 @@
     android:id="@+id/CalculationInterpolationFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculationInterpolationFragment">
+    tools:context=".CalculationInterpolationFragment"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -28,30 +30,10 @@
 
                 <TextView
                     android:id="@+id/interpolation_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:background="@drawable/share"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:text="@string/interpolation_1"
-                    android:textSize="20sp" />
+                    android:layout_width="60dp"
+                    style="@style/Button" />
 
-                <!--<Button-->
-                <!--android:id="@+id/interpolation_2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginLeft="8dp"-->
-                <!--android:background="@drawable/share"-->
-                <!--android:text="@string/interpolation_2" />-->
-
-                <!--<Button-->
-                <!--android:id="@+id/interpolation_3"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginLeft="8dp"-->
-                <!--android:background="@drawable/share"-->
-                <!--android:text="@string/interpolation_3" />-->
             </LinearLayout>
 
             <LinearLayout

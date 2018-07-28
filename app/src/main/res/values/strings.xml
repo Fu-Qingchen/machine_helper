@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">机械设计</string>
+    <string name="app_packageName">top.fuqingchen.machinedesign</string>
+    <string name="app_addresses">fuqingchen.gov@gmail.com</string>
+    <string name="app_subject">Android:【机械设计】</string>
     <string name="app_Recommend">推荐</string>
     <string name="app_delete">清除结果</string>
     <string name="app_share">分享结果</string>
@@ -8,13 +11,14 @@
     <string name="app_safe">安全</string>
     <string name="app_unsafe">不安全</string>
     <string name="app_unWrite">没写→_→</string>
+    <string name="app_coming_soon">尽请期待</string>
     <string name="copy_done">复制好了(=・ω・=)</string>
     <string name="copy_false">你算都没算就叫我复制(-_-#)</string>
-    <string name="app_coming_soon">尽请期待</string>
-    <string name="developer_name">Fu_Qingchen</string>
+    <string name="copyright">Copyright © 2018 Fu_Qingchen.All Rights Reserved.</string>
     <string name="main_Design">设计</string>
     <string name="main_Calculation">计算</string>
     <string name="main_Info">相关信息</string>
+    <string name="developer_name">Fu_Qingchen</string>
     <string name="design_V_belt">V 带</string>
     <string name="design_Gear">齿轮</string>
     <string name="design_FlatKey">平键</string>
@@ -170,5 +174,10 @@
     <string name="calculation_result">计算结果</string>
     <string name="calculation_function">方程</string>
     <string name="differentiation_x">待求点</string>
-    <string name="fitting_">计算类型</string>
+    <string name="OpenSource_MDI">Material design icons</string>
+    <string name="OpenSource_MDI_web">https://github.com/google/material-design-icons</string>
+    <string name="OpenSource_AAS">Android Asset Studio</string>
+    <string name="OpenSource_AAS_web">https://github.com/romannurik/AndroidAssetStudio</string>
+    <string name="OpenSource_ASL">Android Support Library</string>
+    <string name="OpenSource_ASL_web">http://developer.android.com/tools/extras/support-library.html</string>
 </resources>

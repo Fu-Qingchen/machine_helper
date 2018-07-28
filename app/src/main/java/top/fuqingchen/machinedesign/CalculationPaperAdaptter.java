@@ -5,13 +5,20 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.view.ViewGroup;
+
+import java.util.List;
 
 public class CalculationPaperAdaptter extends FragmentPagerAdapter {
     private Context mContext;
+    private List<String> tagLists;
+    private FragmentManager mfragmentManager;
 
     public CalculationPaperAdaptter(Context context, FragmentManager fragmentManager) {
         super(fragmentManager);
         mContext = context;
+        mfragmentManager = fragmentManager;
     }
 
     @Override

@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DesignGearFragment">
+    tools:context=".DesignGearFragment"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -27,14 +29,9 @@
 
                 <TextView
                     android:id="@+id/gear_soft"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:background="@drawable/share"
                     android:text="@string/gear_soft"
-                    android:textSize="20sp"
-                    android:clickable="true"
-                    android:focusable="true"/>
+                    android:layout_width="wrap_content"
+                    style="@style/Button"/>
 
                 <!--<Button-->
                 <!--android:id="@+id/gear_hard"-->

@@ -10,6 +10,7 @@
     tools:context="top.fuqingchen.machinedesign.MainActivity">
 
     <LinearLayout
+        android:id="@+id/MainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -27,8 +28,7 @@
                 android:padding="10dp"
                 android:text="@string/main_Calculation"
                 android:textColor="@color/black"
-                android:textSize="24sp"
-                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
+                android:textSize="24sp" />
 
         </android.support.design.widget.AppBarLayout>
 

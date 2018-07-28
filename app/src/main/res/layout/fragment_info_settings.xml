@@ -33,7 +33,7 @@
                     <TextView
                         android:id="@+id/language_textView"
                         style="@style/info_textView_button"
-                        android:text="@string/language_Follow_System" />
+                        android:text="@string/language_Chinese" />
                 </LinearLayout>
 
                 <ImageView style="@style/info_ImageView_Right" />
@@ -59,7 +59,7 @@
                     <TextView
                         android:id="@+id/nightMode_textView"
                         style="@style/info_textView_button"
-                        android:text="@string/Theme_Automatic" />
+                        android:text="@string/Theme_Off" />
                 </LinearLayout>
 
                 <ImageView style="@style/info_ImageView_Right" />

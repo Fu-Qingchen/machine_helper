@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/openSource_linearLayout"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout style="@style/info_LinearLayout">
+
+        <TextView
+            android:id="@+id/openSource_name"
+            style="@style/info_textView_top"
+            android:textSize="20sp"
+            tools:text="@string/OpenSource_MDI" />
+
+        <View style="@style/info_View" />
+
+        <TextView
+            android:id="@+id/openSource_detal"
+            style="@style/info_textView_button"
+            android:textSize="12sp"
+            tools:text="@string/OpenSource_MDI_web" />
+    </LinearLayout>
+
+    <ImageView style="@style/info_ImageView_Right" />
+</LinearLayout>

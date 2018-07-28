@@ -24,8 +24,8 @@
                     android:layout_width="112dp"
                     android:layout_height="112dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/web_hi_res_512_round"
-                    android:layout_margin="16dp"/>
+                    android:layout_margin="16dp"
+                    android:src="@drawable/web_hi_res_512_round" />
 
                 <TextView
                     android:id="@+id/language_textView"
@@ -33,6 +33,7 @@
                     android:text="@string/about_intro" />
 
             </LinearLayout>
+
             <LinearLayout
                 style="@style/Input_LinearLayout"
                 android:orientation="vertical">
@@ -54,151 +55,186 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_stars_24"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0"
+                        android:src="@drawable/baseline_stars_24" />
+
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/contact_Rate"
                         android:layout_marginLeft="16dp"
-                        android:textSize="18sp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/contact_Rate"
+                        android:textSize="18sp" />
+
                     <ImageView
                         style="@style/info_ImageView_Right"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0" />
                 </LinearLayout>
-                <View
-                    style="@style/info_View"/>
+
+                <View style="@style/info_View" />
+
                 <LinearLayout
                     android:id="@+id/contact_Contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/ic_4975848bga0862c4249ba690_jpg"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0"
+                        android:src="@drawable/ic_4975848bga0862c4249ba690_jpg" />
+
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/contact_Contact"
                         android:layout_marginLeft="16dp"
-                        android:textSize="18sp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/contact_Contact"
+                        android:textSize="18sp" />
+
                     <ImageView
                         style="@style/info_ImageView_Right"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0" />
                 </LinearLayout>
-                <View
-                    style="@style/info_View"/>
+
+                <View style="@style/info_View" />
+
                 <LinearLayout
                     android:id="@+id/contact_Feedback"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/baseline_email_24"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0"
+                        android:src="@drawable/baseline_email_24" />
+
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/contact_Feedback"
                         android:layout_marginLeft="16dp"
-                        android:textSize="18sp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/contact_Feedback"
+                        android:textSize="18sp" />
+
                     <ImageView
                         style="@style/info_ImageView_Right"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0" />
                 </LinearLayout>
-                <View
-                    style="@style/info_View"/>
+
+                <View style="@style/info_View" />
+
                 <LinearLayout
                     android:id="@+id/contact_My_Website"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/baseline_web_24"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0"
+                        android:src="@drawable/baseline_web_24" />
+
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/contact_My_Website"
                         android:layout_marginLeft="16dp"
-                        android:textSize="18sp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/contact_My_Website"
+                        android:textSize="18sp" />
+
                     <ImageView
                         style="@style/info_ImageView_Right"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 style="@style/Input_LinearLayout"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="0dp">
 
                 <TextView
                     style="@style/info_textView_top"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/about_Development_Related" />
+
                 <LinearLayout
                     android:id="@+id/development_code"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_link_24"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0"
+                        android:src="@drawable/baseline_link_24" />
+
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/development_code"
                         android:layout_marginLeft="16dp"
-                        android:textSize="18sp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/development_code"
+                        android:textSize="18sp" />
+
                     <ImageView
                         style="@style/info_ImageView_Right"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0" />
                 </LinearLayout>
-                <View
-                    style="@style/info_View"/>
+
+                <View style="@style/info_View" />
+
                 <LinearLayout
                     android:id="@+id/development_Components"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:paddingBottom="0dp">
+
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/round_copyright_24"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0"
+                        android:src="@drawable/round_copyright_24" />
+
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/development_Components"
                         android:layout_marginLeft="16dp"
-                        android:textSize="18sp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/development_Components"
+                        android:textSize="18sp" />
+
                     <ImageView
                         style="@style/info_ImageView_Right"
-                        android:layout_weight="0"/>
+                        android:layout_weight="0" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 style="@style/Input_LinearLayout"
                 android:orientation="vertical">
@@ -215,6 +251,13 @@
                     android:text="@string/state_main"
                     android:textSize="14sp" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"/>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
