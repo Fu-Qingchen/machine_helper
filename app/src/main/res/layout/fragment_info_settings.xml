@@ -26,7 +26,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/settings_Language" />
+                        android:text="@string/settings_Language"/>
 
                     <View style="@style/info_View" />
 

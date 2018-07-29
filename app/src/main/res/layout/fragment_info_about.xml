@@ -67,7 +67,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:layout_weight="1"
                         android:text="@string/contact_Rate"
                         android:textSize="18sp" />
@@ -96,7 +96,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:layout_weight="1"
                         android:text="@string/contact_Contact"
                         android:textSize="18sp" />
@@ -125,7 +125,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:layout_weight="1"
                         android:text="@string/contact_Feedback"
                         android:textSize="18sp" />
@@ -155,7 +155,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:layout_weight="1"
                         android:text="@string/contact_My_Website"
                         android:textSize="18sp" />
@@ -193,7 +193,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:layout_weight="1"
                         android:text="@string/development_code"
                         android:textSize="18sp" />
@@ -224,7 +224,7 @@
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:layout_weight="1"
                         android:text="@string/development_Components"
                         android:textSize="18sp" />
@@ -253,11 +253,12 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/copyright"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/copyright"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="8dp"/>
+                android:layout_margin="8dp"
+                android:text="@string/copyright" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

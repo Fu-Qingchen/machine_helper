@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DesignBearingFragment"
     android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    tools:context=".DesignBearingFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -13,12 +13,13 @@
         android:layout_height="match_parent">
 
         <LinearLayout style="@style/Main_LinearLayout">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:layout_margin="16dp"
                 android:text="@string/bearing_intro"
-                android:layout_margin="16dp"/>
+                android:textSize="14sp" />
 
             <LinearLayout
                 style="@style/Input_LinearLayout"
@@ -292,46 +293,17 @@
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/bearing_delete"
+                    style="@style/share_TextView"
+                    android:text="@string/app_delete"
+                    android:drawableStart="@drawable/ic_shortcut_delete"/>
 
-                    <LinearLayout
-                        android:id="@+id/delete"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_delete" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_delete" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/share"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_share" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_share" />
-                    </LinearLayout>
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/bearing_share"
+                    style="@style/share_TextView"
+                    android:text="@string/app_share"
+                    android:drawableStart="@drawable/ic_shortcut_share"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

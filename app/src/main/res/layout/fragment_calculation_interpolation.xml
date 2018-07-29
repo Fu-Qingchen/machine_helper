@@ -4,9 +4,9 @@
     android:id="@+id/CalculationInterpolationFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculationInterpolationFragment"
     android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    tools:context=".CalculationInterpolationFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -24,20 +24,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
                     android:text="@string/interpolation_Dimension"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/interpolation_1"
-                    android:text="@string/interpolation_1"
+                    style="@style/Button"
                     android:layout_width="60dp"
-                    style="@style/Button" />
+                    android:text="@string/interpolation_1" />
 
             </LinearLayout>
 
             <LinearLayout
                 style="@style/Input_LinearLayout"
+                android:baselineAligned="false"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -135,7 +136,9 @@
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
 
-            <android.support.v7.widget.CardView style="@style/Output_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/interpolation_copy"
+                style="@style/Output_CardView">
 
                 <TextView
                     android:id="@+id/interpolation_result"
@@ -145,53 +148,20 @@
 
             </android.support.v7.widget.CardView>
 
-
             <LinearLayout
-                style="@style/Normal"
-                android:layout_marginTop="8dp"
-                android:baselineAligned="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/interpolation_delete"
+                    style="@style/share_TextView"
+                    android:drawableStart="@drawable/ic_shortcut_delete"
+                    android:text="@string/app_delete" />
+                <View
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/interpolation_delete"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_delete" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_delete" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/interpolation_copy"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_content_copy" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_copy" />
-                    </LinearLayout>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

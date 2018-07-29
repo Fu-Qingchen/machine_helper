@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".DesignVbeltFragment"
     android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DesignVbeltFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -197,8 +197,8 @@
                     <TextView
                         android:id="@+id/vbelt_L"
                         style="@style/Output_TextView"
-                        android:layout_weight="1"
                         android:layout_height="0dp"
+                        android:layout_weight="1"
                         android:text="@string/vbelt_L" />
 
                     <LinearLayout
@@ -285,49 +285,27 @@
 
             <LinearLayout
                 style="@style/Normal"
-                android:baselineAligned="false"
                 android:layout_marginTop="8dp"
+                android:baselineAligned="false"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:id="@+id/delete"
-                        style="@style/share_LinearLayout">
+                    <TextView
+                        android:id="@+id/vbelt_delete"
+                        style="@style/share_TextView"
+                        android:drawableStart="@drawable/ic_shortcut_delete"
+                        android:text="@string/app_delete" />
 
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_delete" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_delete"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/share"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_share" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_share" />
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/vbelt_share"
+                        style="@style/share_TextView"
+                        android:drawableStart="@drawable/ic_shortcut_share"
+                        android:text="@string/app_share" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

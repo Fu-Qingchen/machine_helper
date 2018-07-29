@@ -7,6 +7,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -14,13 +15,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Fu_Qingchen
  */
 public class CalculationInterpolationFragment extends Fragment {
 
@@ -49,8 +49,8 @@ public class CalculationInterpolationFragment extends Fragment {
         input_y0 = view.findViewById(R.id.interpolation_input_y0);
         input_y1 = view.findViewById(R.id.interpolation_input_y1);
         input_x = view.findViewById(R.id.interpolation_input_x);
-        LinearLayout copy = view.findViewById(R.id.interpolation_copy);
-        LinearLayout delete = view.findViewById(R.id.interpolation_delete);
+        CardView copy = view.findViewById(R.id.interpolation_copy);
+        TextView delete = view.findViewById(R.id.interpolation_delete);
 
         x.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -102,7 +102,7 @@ public class CalculationInterpolationFragment extends Fragment {
                         interpolationInMath.setData(data);
                         interpolationInMath.setNumber(temX);
 
-                        number = interpolationInMath.number;
+                        number = interpolationInMath.getNumber();
                         String input = getResources().getString(R.string.calculation_result) + "\t" + number;
                         ((TextView) view.findViewById(R.id.interpolation_result)).setText(input);
                         flag = true;
@@ -153,6 +153,7 @@ public class CalculationInterpolationFragment extends Fragment {
                 }
             }
         });
+
         return view;
     }
 }

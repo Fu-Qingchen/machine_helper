@@ -5,18 +5,21 @@
     <string name="app_addresses">fuqingchen.gov@gmail.com</string>
     <string name="app_subject">Android:【机械设计】</string>
     <string name="app_Recommend">推荐</string>
-    <string name="app_delete">清除结果</string>
+    <string name="app_delete">全部清除</string>
     <string name="app_share">分享结果</string>
     <string name="app_copy">复制结果</string>
+    <string name="app_doc">说明文档</string>
     <string name="app_safe">安全</string>
     <string name="app_unsafe">不安全</string>
     <string name="app_unWrite">没写→_→</string>
     <string name="app_coming_soon">尽请期待</string>
     <string name="app_finish">完成</string>
+    <string name="app_input_error">输入错误(;¬_¬)</string>
     <string name="guide_welcome">欢迎使用(°∀°)ﾉ</string>
     <string name="guide_intro">这里有几点需要你了解一下</string>
     <string name="guide_intro_1">本程序仅供学习参考，请勿应用于工程实际中</string>
     <string name="guide_intro_2">本程序为免费无广告应用</string>
+    <string name="guide_intro_3">点击“计算结果”即可复制内容</string>
     <string name="guide_message">点框以示阅读(´･_･`)</string>
     <string name="guide_OK">OK（￣▽￣）</string>
     <string name="copy_done">复制好了(=・ω・=)</string>
@@ -176,15 +179,27 @@
     <string name="interpolation_y21">原始数据y1\''</string>
     <string name="interpolation_x">待求插值点x</string>
     <string name="interpolation_y">待求插值点y</string>
-    <string name="integration_low">积分下限</string>
-    <string name="integration_up">积分上限</string>
+    <string name="integration_low">积分下限a</string>
+    <string name="integration_up">积分上限b</string>
     <string name="calculation_result">计算结果</string>
-    <string name="calculation_function">方程</string>
+    <string name="calculation_result_info">注：计算结果有效数字为8位</string>
+    <string name="calculation_function">方程f(x)=</string>
     <string name="differentiation_x">待求点</string>
+    <string name="differentiation_x_tooMuch">警告：该值超过10^6时，计算精度会下降</string>
+    <string name="differentiation_y0">0阶导数</string>
+    <string name="differentiation_y1">1阶导数</string>
+    <string name="differentiation_y2">2阶导数</string>
+    <string name="differentiation_y3">3阶导数</string>
     <string name="OpenSource_MDI">Material design icons</string>
     <string name="OpenSource_MDI_web">https://github.com/google/material-design-icons</string>
     <string name="OpenSource_AAS">Android Asset Studio</string>
     <string name="OpenSource_AAS_web">https://github.com/romannurik/AndroidAssetStudio</string>
     <string name="OpenSource_ASL">Android Support Library</string>
     <string name="OpenSource_ASL_web">http://developer.android.com/tools/extras/support-library.html</string>
+    <string name="OpenSource_CD">CaviarDreams</string>
+    <string name="OpenSource_CD_web">https://www.dafont.com/caviar-dreams.font</string>
+    <string name="OpenSource_exp4j">exp4j</string>
+    <string name="OpenSource_exp4j_web">https://www.objecthunter.net/exp4j/</string>
+    <string name="OpenSource_ACML">Apache Commons Mathematics Library</string>
+    <string name="OpenSource_ACML_web">http://commons.apache.org/proper/commons-math/</string>
 </resources>

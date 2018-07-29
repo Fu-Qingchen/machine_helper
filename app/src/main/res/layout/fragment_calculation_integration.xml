@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculationIntegrationFragment"
     android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    tools:context=".CalculationIntegrationFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -14,19 +14,19 @@
 
         <LinearLayout style="@style/Main_LinearLayout">
 
-            <LinearLayout
-                style="@style/Input_LinearLayout"
-                android:orientation="vertical">
+            <LinearLayout style="@style/Input_LinearLayout">
 
-                <android.support.design.widget.TextInputLayout style="@style/Normal">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/integration_input_function"
+                    style="@style/Normal">
 
                     <AutoCompleteTextView
                         android:id="@+id/integration_function"
                         style="@style/Normal"
                         android:hint="@string/calculation_function"
-                        android:imeOptions="actionDone"
-                        android:inputType="number|numberDecimal|numberSigned"
-                        android:textSize="16sp" />
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textSize="24sp" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
 
@@ -40,6 +40,7 @@
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/integration_input_low"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -54,6 +55,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/integration_input_up"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -69,16 +71,27 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <android.support.v7.widget.CardView style="@style/Output_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/integration_copy"
+                style="@style/Output_CardView">
 
-                <TextView
-                    android:id="@+id/integration_result"
-                    style="@style/Output_TextView"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/calculation_result" />
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/integration_result"
+                        style="@style/Output_TextView"
+                        android:text="@string/calculation_result" />
+
+                    <TextView
+                        style="@style/Output_TextView"
+                        android:text="@string/calculation_result_info"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </android.support.v7.widget.CardView>
-
 
             <LinearLayout
                 style="@style/Normal"
@@ -86,46 +99,17 @@
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/integration_delete"
+                    style="@style/share_TextView"
+                    android:drawableStart="@drawable/ic_shortcut_delete"
+                    android:text="@string/app_delete" />
 
-                    <LinearLayout
-                        android:id="@+id/delete"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_delete" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_delete" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/copy"
-                        style="@style/share_LinearLayout">
-
-                        <ImageView
-                            style="@style/share_ImageView"
-                            android:src="@drawable/ic_shortcut_content_copy" />
-
-                        <TextView
-                            style="@style/share_TextView"
-                            android:text="@string/app_copy" />
-                    </LinearLayout>
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/integration_doc"
+                    style="@style/share_TextView"
+                    android:drawableStart="@drawable/ic_shortcut_attachment"
+                    android:text="@string/app_doc" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

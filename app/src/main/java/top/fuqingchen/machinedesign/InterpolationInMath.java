@@ -3,17 +3,18 @@ package top.fuqingchen.machinedesign;
 /**
  * 拉格朗日插值
  * 要求输入一个二维数组data[2][j],以及要求的数x0;
- * 其中：x[0][j]为x值,y[1][j]为对应的y值
- * x0为需要拟合的值
+ * 其中：x[0][j]为x值,y[1][j]为对应的y值,x0为需要拟合的值
+ *
+ * @author Fu_Qingchen
  */
 
 public class InterpolationInMath {
     private double[][] data = {};    //原始数据
     static double[] n = {};   //最终结果的一项
-    double number = 0.0;   //最终结果
+    private double number = 0.0;   //最终结果
 
-    public double[][] getData() {
-        return data;
+    public double getNumber() {
+        return number;
     }
 
     public void setData(double[][] data) {
