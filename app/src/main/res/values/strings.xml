@@ -12,6 +12,13 @@
     <string name="app_unsafe">不安全</string>
     <string name="app_unWrite">没写→_→</string>
     <string name="app_coming_soon">尽请期待</string>
+    <string name="app_finish">完成</string>
+    <string name="guide_welcome">欢迎使用(°∀°)ﾉ</string>
+    <string name="guide_intro">这里有几点需要你了解一下</string>
+    <string name="guide_intro_1">本程序仅供学习参考，请勿应用于工程实际中</string>
+    <string name="guide_intro_2">本程序为免费无广告应用</string>
+    <string name="guide_message">点框以示阅读(´･_･`)</string>
+    <string name="guide_OK">OK（￣▽￣）</string>
     <string name="copy_done">复制好了(=・ω・=)</string>
     <string name="copy_false">你算都没算就叫我复制(-_-#)</string>
     <string name="copyright">Copyright © 2018 Fu_Qingchen.All Rights Reserved.</string>
