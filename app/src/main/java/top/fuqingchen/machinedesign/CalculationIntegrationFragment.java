@@ -23,7 +23,6 @@ import android.widget.Toast;
 
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
-import net.objecthunter.exp4j.tokenizer.UnknownFunctionOrVariableException;
 
 import org.apache.commons.math3.analysis.UnivariateFunction;
 import org.apache.commons.math3.analysis.integration.SimpsonIntegrator;
@@ -109,7 +108,7 @@ public class CalculationIntegrationFragment extends Fragment {
                             } else if (temLow == temUp) {
                                 number = 0;
                             }
-                            String input = getResources().getString(R.string.calculation_result) + "\t" + number;
+                            String input = getResources().getString(R.string.calculation_result) + ":\t" + number;
                             ((TextView) view.findViewById(R.id.integration_result)).setText(input);
                         }
                     }

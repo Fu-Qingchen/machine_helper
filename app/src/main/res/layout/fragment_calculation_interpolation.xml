@@ -8,7 +8,6 @@
     android:focusableInTouchMode="true"
     tools:context=".CalculationInterpolationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -24,15 +23,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="16dp"
                     android:text="@string/interpolation_Dimension"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/interpolation_1"
-                    style="@style/Button"
-                    android:layout_width="60dp"
-                    android:text="@string/interpolation_1" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/interpolation_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/interpolation_1"
+                        android:checked="true"/>
+                </RadioGroup>
 
             </LinearLayout>
 
@@ -158,10 +166,11 @@
                     style="@style/share_TextView"
                     android:drawableStart="@drawable/ic_shortcut_delete"
                     android:text="@string/app_delete" />
+
                 <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -7,7 +7,6 @@
     android:focusableInTouchMode="true"
     tools:context=".DesignGearFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,44 +16,44 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="16dp"
                     android:text="@string/gear_hardness"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/gear_soft"
-                    style="@style/Button"
+                <RadioGroup
                     android:layout_width="wrap_content"
-                    android:text="@string/gear_soft" />
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <!--<Button-->
-                <!--android:id="@+id/gear_hard"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginLeft="8dp"-->
-                <!--android:background="@drawable/share"-->
-                <!--android:text="@string/gear_hard" />-->
+                    <RadioButton
+                        android:id="@+id/gear_soft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/gear_soft"
+                        android:checked="true"/>
+                </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 style="@style/Input_LinearLayout"
-                android:orientation="vertical">
+                android:baselineAligned="false"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     style="@style/Normal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:baselineAligned="false"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
                             android:id="@+id/gear_sigmaFP1"
@@ -65,33 +64,10 @@
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
-                            android:id="@+id/gear_sigmaFP2"
-                            style="@style/Normal"
-                            android:hint="@string/gear_sigmaFP2"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Normal"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/vbelt_n1"
+                            android:id="@+id/gear_sigmaFH"
                             style="@style/Normal"
                             android:hint="@string/gear_sigmaFH"
                             android:imeOptions="actionNext"
@@ -99,30 +75,7 @@
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/vbelt_n2"
-                            style="@style/Normal"
-                            android:hint="@string/gear_T1"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Normal"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
                             android:id="@+id/gear_T2"
@@ -133,30 +86,7 @@
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/gear_psi_d"
-                            style="@style/Normal"
-                            android:hint="@string/gear_psi_d"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Normal"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
                             android:id="@+id/gear_i"
@@ -167,30 +97,7 @@
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/gear_beta0"
-                            style="@style/Normal"
-                            android:hint="@string/gear_beta0"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Normal"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
                             android:id="@+id/gear_KA"
@@ -201,30 +108,7 @@
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/gear_Kv"
-                            style="@style/Normal"
-                            android:hint="@string/gear_Kv"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Normal"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
                             android:id="@+id/gear_K_beta"
@@ -234,11 +118,71 @@
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                <LinearLayout
+                    style="@style/Normal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_sigmaFP2"
+                            style="@style/Normal"
+                            android:hint="@string/gear_sigmaFP2"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_T1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_T1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_psi_d"
+                            style="@style/Normal"
+                            android:hint="@string/gear_psi_d"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_beta0"
+                            style="@style/Normal"
+                            android:hint="@string/gear_beta0"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gear_Kv"
+                            style="@style/Normal"
+                            android:hint="@string/gear_Kv"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/Normal">
 
                         <AutoCompleteTextView
                             android:id="@+id/gear_K_alpha"
@@ -366,70 +310,59 @@
                 </LinearLayout>
             </LinearLayout>
 
+
             <android.support.v7.widget.CardView style="@style/Output_CardView">
 
                 <LinearLayout
                     style="@style/Normal"
                     android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         style="@style/Normal"
-                        android:orientation="horizontal">
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <TextView
                             android:id="@+id/gear_d1"
                             style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:text="@string/gear_d1" />
-
-                        <TextView
-                            android:id="@+id/gear_d2"
-                            style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/gear_d2" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/Normal"
-                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/gear_da1"
                             style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:text="@string/gear_da1" />
-
-                        <TextView
-                            android:id="@+id/gear_da2"
-                            style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/gear_da2" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/Normal"
-                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/gear_df1"
                             style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:text="@string/gear_df1" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/gear_d2"
+                            style="@style/Output_TextView"
+                            android:text="@string/gear_d2" />
+
+                        <TextView
+                            android:id="@+id/gear_da2"
+                            style="@style/Output_TextView"
+                            android:text="@string/gear_da2" />
+
 
                         <TextView
                             android:id="@+id/gear_df2"
                             style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/gear_df2" />
                     </LinearLayout>
                 </LinearLayout>
@@ -537,10 +470,10 @@
                     android:text="@string/app_delete" />
 
                 <TextView
-                    android:id="@+id/gear_share"
+                    android:id="@+id/gear_copy"
                     style="@style/share_TextView"
-                    android:drawableStart="@drawable/ic_shortcut_share"
-                    android:text="@string/app_share" />
+                    android:drawableStart="@drawable/ic_shortcut_content_copy"
+                    android:text="@string/app_copy" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

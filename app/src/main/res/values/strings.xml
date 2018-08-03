@@ -19,12 +19,12 @@
     <string name="guide_intro">这里有几点需要你了解一下</string>
     <string name="guide_intro_1">本程序仅供学习参考，请勿应用于工程实际中</string>
     <string name="guide_intro_2">本程序为免费无广告应用</string>
-    <string name="guide_intro_3">点击“计算结果”即可复制内容</string>
+    <string name="guide_intro_3">在「计算」板块，点击“计算结果”即可复制</string>
     <string name="guide_message">点框以示阅读(´･_･`)</string>
     <string name="guide_OK">OK（￣▽￣）</string>
     <string name="copy_done">复制好了(=・ω・=)</string>
     <string name="copy_false">你算都没算就叫我复制(-_-#)</string>
-    <string name="copyright">Copyright © 2018 Fu_Qingchen.All Rights Reserved.</string>
+    <string name="copyright">Developed by Fu_Qingchen in China.</string>
     <string name="main_Design">设计</string>
     <string name="main_Calculation">计算</string>
     <string name="main_Info">相关信息</string>
@@ -129,8 +129,8 @@
     <string name="key_A">A型</string>
     <string name="key_B">B型</string>
     <string name="key_C">C型</string>
-    <string name="key_d">轴的直径d</string>
-    <string name="key_l">轮毂长度l</string>
+    <string name="key_d">轴的直径d(mm)</string>
+    <string name="key_l">轮毂长度l(mm)</string>
     <string name="key_bh">键宽键高b×h</string>
     <string name="key_L">键长L</string>
     <string name="key_P">应力σ/压强P</string>
@@ -143,7 +143,12 @@
     <string name="key_normal">一般</string>
     <string name="key_hard">较紧</string>
     <string name="key_b">键宽b</string>
-    <string name="key_GB">(GB/T 1096—2003)</string>
+    <string name="key_GB">(GB/T 1095—2003 , GB/T 1096—2003)</string>
+    <string name="key_GB_info">注：新标准将“轴t/毂t1”改为了“轴t1/毂t2”</string>
+    <string name="key_d_info">仅支持轴径为6mm~500mm的轴=_=</string>
+    <string name="key_l_info">仅支持轴长为6mm~549mm的轴=_=</string>
+    <string name="key_1">轴</string>
+    <string name="key_2">毂</string>
     <string name="bearing_intro">其实这个并没有什么意义，不过可以规范操作</string>
     <string name="bearing_type">轴承型号(仅限深沟球轴承)</string>
     <string name="bearing_FR">径向力FR</string>

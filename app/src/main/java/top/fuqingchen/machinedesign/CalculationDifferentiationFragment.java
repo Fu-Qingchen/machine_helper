@@ -98,10 +98,10 @@ public class CalculationDifferentiationFragment extends Fragment {
                         }
                         differentiation(temFunction, temX);
 
-                        String inputy0 = getResources().getString(R.string.differentiation_y0) + "\t" + y_differentiated[0];
-                        String inputy1 = getResources().getString(R.string.differentiation_y1) + "\t" + y_differentiated[1];
-                        String inputy2 = getResources().getString(R.string.differentiation_y2) + "\t" + y_differentiated[2];
-                        String inputy3 = getResources().getString(R.string.differentiation_y3) + "\t" + y_differentiated[3];
+                        String inputy0 = getResources().getString(R.string.differentiation_y0) + ":\t" + y_differentiated[0];
+                        String inputy1 = getResources().getString(R.string.differentiation_y1) + ":\t" + y_differentiated[1];
+                        String inputy2 = getResources().getString(R.string.differentiation_y2) + ":\t" + y_differentiated[2];
+                        String inputy3 = getResources().getString(R.string.differentiation_y3) + ":\t" + y_differentiated[3];
 
                         copyY0.setText(inputy0);
                         copyY1.setText(inputy1);

@@ -103,7 +103,7 @@ public class CalculationInterpolationFragment extends Fragment {
                         interpolationInMath.setNumber(temX);
 
                         number = interpolationInMath.getNumber();
-                        String input = getResources().getString(R.string.calculation_result) + "\t" + number;
+                        String input = getResources().getString(R.string.calculation_result) + ":\t" + number;
                         ((TextView) view.findViewById(R.id.interpolation_result)).setText(input);
                         flag = true;
                     }

@@ -108,6 +108,10 @@ public class InfoAboutFragment extends Fragment {
             }
         });
 
+        TextView copyright = view.findViewById(R.id.copyright);
+        Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "CaviarDreams.ttf");
+        copyright.setTypeface(typeface);
+
         return view;
     }
 }

@@ -9,7 +9,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".DesignVbeltFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -302,10 +301,10 @@
                         android:text="@string/app_delete" />
 
                     <TextView
-                        android:id="@+id/vbelt_share"
+                        android:id="@+id/vbelt_copy"
                         style="@style/share_TextView"
-                        android:drawableStart="@drawable/ic_shortcut_share"
-                        android:text="@string/app_share" />
+                        android:drawableStart="@drawable/ic_shortcut_content_copy"
+                        android:text="@string/app_copy" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
