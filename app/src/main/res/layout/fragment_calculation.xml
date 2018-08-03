@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <android.support.design.widget.TabLayout
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs_calculation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         <View
             style="@style/shadow" />
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager_calculation"
             android:layout_width="match_parent"
             android:layout_height="0dp"

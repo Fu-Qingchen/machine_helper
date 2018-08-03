@@ -178,10 +178,10 @@
     <string name="interpolation_y10">原始数据y0\'</string>
     <string name="interpolation_x11">原始数据x1\'</string>
     <string name="interpolation_y11">原始数据y1\'</string>
-    <string name="interpolation_x20">原始数据x0\''</string>
-    <string name="interpolation_y20">原始数据y0\''</string>
-    <string name="interpolation_x21">原始数据x1\''</string>
-    <string name="interpolation_y21">原始数据y1\''</string>
+    <string name="interpolation_x20">原始数据x0\'\'</string>
+    <string name="interpolation_y20">原始数据y0\'\'</string>
+    <string name="interpolation_x21">原始数据x1\'\'</string>
+    <string name="interpolation_y21">原始数据y1\'\'</string>
     <string name="interpolation_x">待求插值点x</string>
     <string name="interpolation_y">待求插值点y</string>
     <string name="integration_low">积分下限a</string>

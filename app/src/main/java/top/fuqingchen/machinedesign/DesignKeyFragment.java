@@ -4,19 +4,20 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
+import androidx.fragment.app.Fragment;
 
 
 /**
@@ -24,13 +25,13 @@ import android.widget.Toast;
  */
 public class DesignKeyFragment extends Fragment {
     View view;
-    boolean flag = false, flag_d = false, clear = false;
-    FlagKey flagKey = new FlagKey();
+    private boolean flag = false, flag_d = false, clear = false;
+    private FlagKey flagKey = new FlagKey();
     TextInputLayout key_input_d, key_input_l;
-    AutoCompleteTextView key_d, key_l;
+    TextInputEditText key_d, key_l;
     RadioGroup key_style;
     RadioButton key_soft, key_normal, key_hard;
-    double temD;
+    private double temD;
     int type = 4;
 
 

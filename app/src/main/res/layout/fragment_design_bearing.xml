@@ -24,16 +24,16 @@
                 style="@style/Input_LinearLayout"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout style="@style/Normal">
+                <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
 
-                    <AutoCompleteTextView
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/bearing_type"
                         style="@style/Normal"
                         android:hint="@string/bearing_type"
                         android:imeOptions="actionNext"
                         android:inputType="number|numberDecimal|numberSigned"
                         android:textSize="16sp" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <LinearLayout
@@ -41,33 +41,33 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_FR"
                             style="@style/Normal"
                             android:hint="@string/bearing_FR"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_FA"
                             style="@style/Normal"
                             android:hint="@string/bearing_FA"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -80,33 +80,33 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_D"
                             style="@style/Normal"
                             android:hint="@string/bearing_D"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_i"
                             style="@style/Normal"
                             android:hint="@string/bearing_i"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -114,33 +114,33 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_Cr"
                             style="@style/Normal"
                             android:hint="@string/bearing_Cr"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_C0r"
                             style="@style/Normal"
                             android:hint="@string/bearing_C0r"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -153,33 +153,33 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_e"
                             style="@style/Normal"
                             android:hint="@string/bearing_e"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_fp"
                             style="@style/Normal"
                             android:hint="@string/bearing_fp"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -187,37 +187,37 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_X"
                             style="@style/Normal"
                             android:hint="@string/bearing_X"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_Y"
                             style="@style/Normal"
                             android:hint="@string/bearing_Y"
                             android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <android.support.v7.widget.CardView style="@style/Output_CardView">
+            <com.google.android.material.card.MaterialCardView style="@style/Output_CardView">
 
                 <TextView
                     android:id="@+id/bearing_P"
@@ -225,7 +225,7 @@
                     android:layout_margin="16dp"
                     android:text="@string/bearing_P" />
 
-            </android.support.v7.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
             <LinearLayout
                 style="@style/Input_LinearLayout"
@@ -236,37 +236,37 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_ft"
                             style="@style/Normal"
                             android:hint="@string/bearing_ft"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/bearing_n"
                             style="@style/Normal"
                             android:hint="@string/bearing_n"
                             android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <android.support.v7.widget.CardView style="@style/Output_CardView">
+            <com.google.android.material.card.MaterialCardView style="@style/Output_CardView">
 
                 <LinearLayout
                     style="@style/Normal"
@@ -284,7 +284,7 @@
                         style="@style/Output_TextView"
                         android:text="@string/bearing_Lh" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
             <LinearLayout
                 style="@style/Normal"
@@ -295,14 +295,14 @@
                 <TextView
                     android:id="@+id/bearing_delete"
                     style="@style/share_TextView"
-                    android:text="@string/app_delete"
-                    android:drawableStart="@drawable/ic_shortcut_delete"/>
+                    android:drawableStart="@drawable/ic_shortcut_delete"
+                    android:text="@string/app_delete" />
 
                 <TextView
                     android:id="@+id/bearing_copy"
                     style="@style/share_TextView"
-                    android:text="@string/app_copy"
-                    android:drawableStart="@drawable/ic_shortcut_content_copy"/>
+                    android:drawableStart="@drawable/ic_shortcut_content_copy"
+                    android:text="@string/app_copy" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -1,12 +1,13 @@
 package top.fuqingchen.machinedesign;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 public class CalculationPaperAdaptter extends FragmentPagerAdapter {
     private Context mContext;

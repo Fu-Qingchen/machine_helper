@@ -5,9 +5,6 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -18,6 +15,12 @@ import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+
 
 /**
  * @author Fu_Qingchen
@@ -25,7 +28,7 @@ import android.widget.Toast;
 public class CalculationInterpolationFragment extends Fragment {
 
     double number;
-    boolean flag = false;
+    private boolean flag = false;
     private TextInputLayout input_x0, input_x1, input_y0, input_y1, input_x;
 
 
@@ -39,11 +42,11 @@ public class CalculationInterpolationFragment extends Fragment {
                              Bundle savedInstanceState) {
         final View view =
                 inflater.inflate(R.layout.fragment_calculation_interpolation, container, false);
-        final AutoCompleteTextView x0 = view.findViewById(R.id.interpolation_x0);
-        final AutoCompleteTextView x1 = view.findViewById(R.id.interpolation_x1);
-        final AutoCompleteTextView y0 = view.findViewById(R.id.interpolation_y0);
-        final AutoCompleteTextView y1 = view.findViewById(R.id.interpolation_y1);
-        final AutoCompleteTextView x = view.findViewById(R.id.interpolation_x);
+        final TextInputEditText x0 = view.findViewById(R.id.interpolation_x0);
+        final TextInputEditText x1 = view.findViewById(R.id.interpolation_x1);
+        final TextInputEditText y0 = view.findViewById(R.id.interpolation_y0);
+        final TextInputEditText y1 = view.findViewById(R.id.interpolation_y1);
+        final TextInputEditText x = view.findViewById(R.id.interpolation_x);
         input_x0 = view.findViewById(R.id.interpolation_input_x0);
         input_x1 = view.findViewById(R.id.interpolation_input_x1);
         input_y0 = view.findViewById(R.id.interpolation_input_y0);

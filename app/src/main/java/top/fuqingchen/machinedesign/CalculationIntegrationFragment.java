@@ -7,9 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -21,6 +18,9 @@ import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
@@ -28,16 +28,19 @@ import org.apache.commons.math3.analysis.UnivariateFunction;
 import org.apache.commons.math3.analysis.integration.SimpsonIntegrator;
 import org.apache.commons.math3.analysis.integration.UnivariateIntegrator;
 
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+
 /**
  * @author Fu_Qingchen
  */
 public class CalculationIntegrationFragment extends Fragment {
     double number;
-    boolean flag = false;
+    private boolean flag = false;
     private TextInputLayout input_function, input_low, input_up;
     private String[] func = {"abs()", "acos()", "asin()", "atan()", "cbrt()", "ceil()", "cos()",
             "cosh()", "exp()", "floor()", "log()", "log10()", "log2()", "sin()", "sinh()", "sqrt()",
-            "tan()", "tanh()", "signum()","e","pi"};
+            "tan()", "tanh()", "signum()", "e", "pi"};
 
 
     public CalculationIntegrationFragment() {
@@ -51,8 +54,8 @@ public class CalculationIntegrationFragment extends Fragment {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_calculation_integration, container, false);
         final AutoCompleteTextView function = view.findViewById(R.id.integration_function);
-        final AutoCompleteTextView low = view.findViewById(R.id.integration_low);
-        final AutoCompleteTextView up = view.findViewById(R.id.integration_up);
+        final TextInputEditText low = view.findViewById(R.id.integration_low);
+        final TextInputEditText up = view.findViewById(R.id.integration_up);
         input_function = view.findViewById(R.id.integration_input_function);
         input_low = view.findViewById(R.id.integration_input_low);
         input_up = view.findViewById(R.id.integration_input_up);
@@ -60,7 +63,7 @@ public class CalculationIntegrationFragment extends Fragment {
         TextView delete = view.findViewById(R.id.integration_delete);
         TextView doc = view.findViewById(R.id.integration_doc);
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line,func);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_dropdown_item_1line, func);
         function.setAdapter(arrayAdapter);
 
         up.setOnEditorActionListener(new TextView.OnEditorActionListener() {

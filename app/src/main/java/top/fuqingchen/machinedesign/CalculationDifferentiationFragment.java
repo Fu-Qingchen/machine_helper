@@ -7,8 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -20,6 +18,9 @@ import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
@@ -28,18 +29,20 @@ import org.apache.commons.math3.analysis.differentiation.DerivativeStructure;
 import org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator;
 import org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction;
 
+import androidx.fragment.app.Fragment;
+
 
 /**
  * @author Fu_Qingchen
  */
 public class CalculationDifferentiationFragment extends Fragment {
-    final int order = 3;
+    private final int order = 3;
     private TextInputLayout input_function, input_x;
     private boolean flag = false;
     private double[] y_differentiated = new double[order + 1];
     private String[] func = {"abs()", "acos()", "asin()", "atan()", "cbrt()", "ceil()", "cos()",
             "cosh()", "exp()", "floor()", "log()", "log10()", "log2()", "sin()", "sinh()", "sqrt()",
-            "tan()", "tanh()", "signum()","e","pi"};
+            "tan()", "tanh()", "signum()", "e", "pi"};
 
 
     public CalculationDifferentiationFragment() {
@@ -54,7 +57,7 @@ public class CalculationDifferentiationFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_calculation_differentiation, container, false);
 
         final AutoCompleteTextView function = view.findViewById(R.id.differentiation_function);
-        final AutoCompleteTextView x = view.findViewById(R.id.differentiation_x);
+        final TextInputEditText x = view.findViewById(R.id.differentiation_x);
         input_function = view.findViewById(R.id.differentiation_input_function);
         input_x = view.findViewById(R.id.differentiation_input_x);
         TextView delete = view.findViewById(R.id.differentiation_delete);
@@ -64,7 +67,7 @@ public class CalculationDifferentiationFragment extends Fragment {
         final TextView copyY2 = view.findViewById(R.id.differentiation_result_y2);
         final TextView copyY3 = view.findViewById(R.id.differentiation_result_y3);
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line,func);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_dropdown_item_1line, func);
         function.setAdapter(arrayAdapter);
 
         x.setOnEditorActionListener(new TextView.OnEditorActionListener() {

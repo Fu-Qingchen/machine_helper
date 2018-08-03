@@ -14,7 +14,7 @@
         <LinearLayout style="@style/Main_LinearLayout">
 
             <LinearLayout style="@style/Input_LinearLayout">
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/integration_input_function"
                     style="@style/Normal">
 
@@ -25,7 +25,7 @@
                         android:imeOptions="actionNext"
                         android:singleLine="true"
                         android:textSize="24sp" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -37,39 +37,39 @@
                     android:baselineAligned="false"
                     android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/integration_input_low"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/integration_low"
                             style="@style/Normal"
                             android:hint="@string/integration_low"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/integration_input_up"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <AutoCompleteTextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/integration_up"
                             style="@style/Normal"
                             android:hint="@string/integration_up"
                             android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <android.support.v7.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/integration_copy"
                 style="@style/Output_CardView">
 
@@ -89,7 +89,7 @@
                         android:text="@string/calculation_result_info"
                         android:textSize="14sp" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
             <LinearLayout
                 style="@style/Normal"
