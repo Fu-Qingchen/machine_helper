@@ -24,7 +24,7 @@ import androidx.fragment.app.Fragment;
  * A simple {@link Fragment} subclass.
  */
 public class DesignKeyFragment extends Fragment {
-    View view;
+    View view, foucus;
     private boolean flag = false, flag_d = false, clear = false;
     private FlagKey flagKey = new FlagKey();
     TextInputLayout key_input_d, key_input_l;
@@ -113,6 +113,8 @@ public class DesignKeyFragment extends Fragment {
 
                         flag_d = true;
 
+                        foucus = view.findViewById(R.id.key_l);
+                        foucus.requestFocus();
                     } else {
                         flag_d = false;
                         key_input_d.setError(getString(R.string.key_d_info));

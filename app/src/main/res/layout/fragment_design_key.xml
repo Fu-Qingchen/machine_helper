@@ -13,6 +13,12 @@
 
         <LinearLayout style="@style/Main_LinearLayout">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/key_intro"
+                android:textSize="14sp"/>
 
             <LinearLayout
                 style="@style/Input_LinearLayout"

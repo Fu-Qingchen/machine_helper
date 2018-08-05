@@ -15,7 +15,7 @@
             android:id="@+id/tabs_design"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabBackground="@android:color/transparent" />
+            app:tabBackground="@color/colorPrimary" />
 
         <View style="@style/shadow" />
 

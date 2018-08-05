@@ -32,8 +32,7 @@ public class OpenSourceAdapter extends ArrayAdapter<OpenSource> {
 
         TextView nameTextView = listItemView.findViewById(R.id.openSource_name);
         nameTextView.setText(openSource.getMname());
-        Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "CaviarDreams.ttf");
-        nameTextView.setTypeface(typeface);
+
 
         TextView numberTextView = listItemView.findViewById(R.id.openSource_detal);
         numberTextView.setText(openSource.getDetal());

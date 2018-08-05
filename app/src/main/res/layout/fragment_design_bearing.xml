@@ -16,24 +16,49 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/bearing_intro"
                 android:textSize="14sp" />
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/bearing_style"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/bearing_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/bearing_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/bearing_r" />
+
+                    <RadioButton
+                        android:id="@+id/bearing_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/bearing_l" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 style="@style/Input_LinearLayout"
                 android:orientation="vertical">
-
-                <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/bearing_type"
-                        style="@style/Normal"
-                        android:hint="@string/bearing_type"
-                        android:imeOptions="actionNext"
-                        android:inputType="number|numberDecimal|numberSigned"
-                        android:textSize="16sp" />
-                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <LinearLayout
@@ -42,6 +67,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_FR_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -56,6 +82,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_FA_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -75,39 +102,21 @@
                 style="@style/Input_LinearLayout"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    style="@style/Normal"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bearing_i_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/bearing_i"
+                        style="@style/Normal"
+                        android:hint="@string/bearing_i"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/bearing_D"
-                            style="@style/Normal"
-                            android:hint="@string/bearing_D"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/bearing_i"
-                            style="@style/Normal"
-                            android:hint="@string/bearing_i"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </com.google.android.material.textfield.TextInputLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     style="@style/Normal"
@@ -115,6 +124,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_Cr_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -129,6 +139,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_C0r_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -137,7 +148,7 @@
                             android:id="@+id/bearing_C0r"
                             style="@style/Normal"
                             android:hint="@string/bearing_C0r"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -154,6 +165,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_e_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -168,6 +180,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_fp_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -188,6 +201,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_X_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -202,6 +216,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_Y_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -237,6 +252,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_ft_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -251,6 +267,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_n_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
