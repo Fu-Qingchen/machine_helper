@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,6 +13,15 @@
         android:layout_height="match_parent">
 
         <LinearLayout style="@style/Main_LinearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/gear_intro"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,8 +46,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/gear_soft"
-                        android:checked="true"/>
+                        android:checked="true"
+                        android:text="@string/gear_soft" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -53,68 +63,80 @@
                     android:baselineAligned="false"
                     android:orientation="vertical">
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_sigmaFP1_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_sigmaFP1"
                             style="@style/Normal"
                             android:hint="@string/gear_sigmaFP1"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_sigmaHP_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gear_sigmaFH"
+                            android:id="@+id/gear_sigmaHP"
                             style="@style/Normal"
-                            android:hint="@string/gear_sigmaFH"
-                            android:imeOptions="actionNext"
+                            android:hint="@string/gear_sigmaHP"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_T2_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_T2"
                             style="@style/Normal"
                             android:hint="@string/gear_T2"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_i_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_i"
                             style="@style/Normal"
                             android:hint="@string/gear_i"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_KA_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_KA"
                             style="@style/Normal"
                             android:hint="@string/gear_KA"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_K_beta_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_K_beta"
                             style="@style/Normal"
                             android:hint="@string/gear_K_beta"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -127,62 +149,74 @@
                     android:baselineAligned="false"
                     android:orientation="vertical">
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_sigmaFP2_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_sigmaFP2"
                             style="@style/Normal"
                             android:hint="@string/gear_sigmaFP2"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_T1_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_T1"
                             style="@style/Normal"
                             android:hint="@string/gear_T1"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_psi_d_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_psi_d"
                             style="@style/Normal"
                             android:hint="@string/gear_psi_d"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_beta0_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_beta0"
                             style="@style/Normal"
                             android:hint="@string/gear_beta0"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_Kv_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_Kv"
                             style="@style/Normal"
                             android:hint="@string/gear_Kv"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout style="@style/Normal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_K_alpha_input"
+                        style="@style/Normal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_K_alpha"
@@ -216,20 +250,23 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_z1_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        app:helperText="@string/gear_z1_intro">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/gear_z1"
                             style="@style/Normal"
                             android:hint="@string/gear_z1"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_z2_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -239,7 +276,7 @@
                             style="@style/Normal"
                             android:hint="@string/gear_z2"
                             android:imeOptions="actionDone"
-                            android:inputType="number|numberDecimal|numberSigned"
+                            android:inputType="number"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -258,17 +295,113 @@
                         style="@style/Output_TextView"
                         android:text="@string/gear_mn" />
 
-                    <TextView
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/gear_a_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/gear_a"
-                        style="@style/Output_TextView"
-                        android:text="@string/gear_a" />
+                        style="@style/Normal"
+                        android:hint="@string/gear_a"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView style="@style/Output_CardView">
+
+                <LinearLayout
+                    style="@style/Normal"
+                    android:layout_margin="16dp"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/vbelt_delta"
+                        android:id="@+id/gear_beta"
                         style="@style/Output_TextView"
                         android:text="@string/gear_beta" />
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_d1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_d1" />
+
+                        <TextView
+                            android:id="@+id/gear_d2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_d2" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_da1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_da1" />
+
+                        <TextView
+                            android:id="@+id/gear_da2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_da2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Normal"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gear_df1"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_df1" />
+
+
+                        <TextView
+                            android:id="@+id/gear_df2"
+                            style="@style/Output_TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/gear_df2" />
+                    </LinearLayout>
                 </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
             <LinearLayout
@@ -281,6 +414,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_b1_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -289,12 +423,13 @@
                             android:id="@+id/gear_b1"
                             style="@style/Normal"
                             android:hint="@string/gear_b1"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_b2_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -308,69 +443,6 @@
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
-            </LinearLayout>
-
-
-            <com.google.android.material.card.MaterialCardView style="@style/Output_CardView">
-
-                <LinearLayout
-                    style="@style/Normal"
-                    android:layout_margin="16dp"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false">
-
-                    <LinearLayout
-                        style="@style/Normal"
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/gear_d1"
-                            style="@style/Output_TextView"
-                            android:text="@string/gear_d1" />
-
-                        <TextView
-                            android:id="@+id/gear_da1"
-                            style="@style/Output_TextView"
-                            android:text="@string/gear_da1" />
-
-                        <TextView
-                            android:id="@+id/gear_df1"
-                            style="@style/Output_TextView"
-                            android:text="@string/gear_df1" />
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        style="@style/Normal"
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/gear_d2"
-                            style="@style/Output_TextView"
-                            android:text="@string/gear_d2" />
-
-                        <TextView
-                            android:id="@+id/gear_da2"
-                            style="@style/Output_TextView"
-                            android:text="@string/gear_da2" />
-
-
-                        <TextView
-                            android:id="@+id/gear_df2"
-                            style="@style/Output_TextView"
-                            android:text="@string/gear_df2" />
-                    </LinearLayout>
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <LinearLayout
-                style="@style/Input_LinearLayout"
-                android:orientation="vertical">
 
                 <LinearLayout
                     style="@style/Normal"
@@ -378,6 +450,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_YFS1_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -386,12 +459,13 @@
                             android:id="@+id/gear_YFS1"
                             style="@style/Normal"
                             android:hint="@string/gear_YFS1"
-                            android:imeOptions="actionNext"
+                            android:imeOptions="actionDone"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_YFS2_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">

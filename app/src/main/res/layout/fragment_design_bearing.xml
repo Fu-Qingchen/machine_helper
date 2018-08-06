@@ -165,21 +165,6 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/bearing_e_input"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/bearing_e"
-                            style="@style/Normal"
-                            android:hint="@string/bearing_e"
-                            android:imeOptions="actionNext"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/bearing_fp_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -189,6 +174,21 @@
                             android:id="@+id/bearing_fp"
                             style="@style/Normal"
                             android:hint="@string/bearing_fp"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberDecimal|numberSigned"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bearing_e_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/bearing_e"
+                            style="@style/Normal"
+                            android:hint="@string/bearing_e"
                             android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />

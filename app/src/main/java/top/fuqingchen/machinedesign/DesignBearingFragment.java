@@ -86,11 +86,7 @@ public class DesignBearingFragment extends Fragment {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 boolean vclear = clear;
-                Log.e("clear2", clear + "");
-                Log.e("vclear2", vclear + "");
                 if (!vclear) {
-                    Log.e("clear3", clear + "");
-                    Log.e("vclear3", vclear + "");
                     RadioButton radioButton = view.findViewById(checkedId);
                     switch (radioButton.getText().toString()) {
                         case "球轴承":
@@ -166,7 +162,7 @@ public class DesignBearingFragment extends Fragment {
                         bearing_Cr_input.setError(null);
                         bearing_C0r_input.setError(null);
 
-                        focus = bearing_e;
+                        focus = bearing_fp;
                         focus.requestFocus();
                     }
                 }
@@ -232,15 +228,15 @@ public class DesignBearingFragment extends Fragment {
                         cancel = true;
                         focus = bearing_X;
                     }
-                    if (TextUtils.isEmpty(bearing_fp.getText().toString())) {
-                        bearing_fp_input.setError(getString(R.string.app_unWrite));
-                        cancel = true;
-                        focus = bearing_fp;
-                    }
                     if (TextUtils.isEmpty(bearing_e.getText().toString())) {
                         bearing_e_input.setError(getString(R.string.app_unWrite));
                         cancel = true;
                         focus = bearing_e;
+                    }
+                    if (TextUtils.isEmpty(bearing_fp.getText().toString())) {
+                        bearing_fp_input.setError(getString(R.string.app_unWrite));
+                        cancel = true;
+                        focus = bearing_fp;
                     }
                     if (TextUtils.isEmpty(bearing_C0r.getText().toString())) {
                         bearing_C0r_input.setError(getString(R.string.app_unWrite));
@@ -282,8 +278,9 @@ public class DesignBearingFragment extends Fragment {
 
                         double X = Double.valueOf(bearing_X.getText().toString());
                         double Y = Double.valueOf(bearing_Y.getText().toString());
+                        double fp = Double.valueOf(bearing_fp.getText().toString());
 
-                        String p = getResources().getString(R.string.bearing_P) + ":\t" + getP(X, FR, Y, FA);
+                        String p = getResources().getString(R.string.bearing_P) + ":\t" + getP(fp, X, FR, Y, FA);
 
                         ((TextView) view.findViewById(R.id.bearing_P)).setText(p);
 
@@ -321,15 +318,15 @@ public class DesignBearingFragment extends Fragment {
                         cancel = true;
                         focus = bearing_X;
                     }
-                    if (TextUtils.isEmpty(bearing_fp.getText().toString())) {
-                        bearing_fp_input.setError(getString(R.string.app_unWrite));
-                        cancel = true;
-                        focus = bearing_fp;
-                    }
                     if (TextUtils.isEmpty(bearing_e.getText().toString())) {
                         bearing_e_input.setError(getString(R.string.app_unWrite));
                         cancel = true;
                         focus = bearing_e;
+                    }
+                    if (TextUtils.isEmpty(bearing_fp.getText().toString())) {
+                        bearing_fp_input.setError(getString(R.string.app_unWrite));
+                        cancel = true;
+                        focus = bearing_fp;
                     }
                     if (TextUtils.isEmpty(bearing_C0r.getText().toString())) {
                         bearing_C0r_input.setError(getString(R.string.app_unWrite));
@@ -475,8 +472,8 @@ public class DesignBearingFragment extends Fragment {
         return iFAC0r;
     }
 
-    private double getP(double X, double FR, double Y, double FA) {
-        P = X * FR + Y * FA;
+    private double getP(double fp, double X, double FR, double Y, double FA) {
+        P = fp * (X * FR + Y * FA);
         return P;
     }
 
