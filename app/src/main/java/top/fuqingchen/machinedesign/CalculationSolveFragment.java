@@ -27,10 +27,6 @@ import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
 import org.apache.commons.math3.analysis.UnivariateFunction;
-import org.apache.commons.math3.analysis.integration.SimpsonIntegrator;
-import org.apache.commons.math3.analysis.integration.UnivariateIntegrator;
-import org.apache.commons.math3.analysis.solvers.AllowedSolution;
-import org.apache.commons.math3.analysis.solvers.BisectionSolver;
 import org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver;
 import org.apache.commons.math3.analysis.solvers.UnivariateSolver;
 import org.apache.commons.math3.exception.NoBracketingException;
@@ -41,7 +37,7 @@ import androidx.fragment.app.Fragment;
 /**
  * @author Fu_Qingchen
  */
-public class CalculationSafeFragment extends Fragment {
+public class CalculationSolveFragment extends Fragment {
     View view;
     private TextInputLayout input_function, input_low, input_up;
     private boolean flag = false;
@@ -51,7 +47,7 @@ public class CalculationSafeFragment extends Fragment {
     MaterialCardView copy;
     double result;
 
-    public CalculationSafeFragment() {
+    public CalculationSolveFragment() {
         // Required empty public constructor
     }
 
@@ -60,7 +56,7 @@ public class CalculationSafeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_calculation_safe, container, false);
+        view = inflater.inflate(R.layout.fragment_calculation_solve, container, false);
 
         final AutoCompleteTextView function = view.findViewById(R.id.safe_function);
         final TextInputEditText low = view.findViewById(R.id.safe_low);
@@ -136,8 +132,8 @@ public class CalculationSafeFragment extends Fragment {
 
                 getFragmentManager()
                         .beginTransaction()
-                        .detach(CalculationSafeFragment.this)
-                        .attach(CalculationSafeFragment.this)
+                        .detach(CalculationSolveFragment.this)
+                        .attach(CalculationSolveFragment.this)
                         .commit();
             }
         });

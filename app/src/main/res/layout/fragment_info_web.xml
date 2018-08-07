@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoSettingsFragment">
+    tools:context=".InfoWebFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -11,57 +11,81 @@
 
         <LinearLayout
             style="@style/Main_LinearLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_Web_intro"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"/>
 
             <LinearLayout
-                android:id="@+id/language_linearLayout"
+                android:id="@+id/GB_linearLayout"
                 style="@style/Input_LinearLayout"
                 android:orientation="horizontal">
 
                 <ImageView
                     style="@style/info_ImageView_Left"
-                    android:src="@drawable/sharp_translate_24" />
+                    android:src="@drawable/baseline_search_24" />
 
                 <LinearLayout style="@style/info_LinearLayout">
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/settings_Language"/>
+                        android:text="@string/Web_GB688"/>
 
                     <View style="@style/info_View" />
 
                     <TextView
                         android:id="@+id/language_textView"
                         style="@style/info_textView_button"
-                        android:text="@string/language_Chinese" />
+                        android:text="@string/Web_GB688_web" />
                 </LinearLayout>
 
                 <ImageView style="@style/info_ImageView_Right" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/nightMode_linearLayout"
+                android:id="@+id/GBhelp_linearLayout"
                 style="@style/Input_LinearLayout"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true">
 
                 <ImageView
                     style="@style/info_ImageView_Left"
-                    android:src="@drawable/sharp_brightness_2_24" />
+                    android:src="@drawable/baseline_help_outline_24" />
 
                 <LinearLayout style="@style/info_LinearLayout">
 
                     <TextView
                         style="@style/info_textView_top"
-                        android:text="@string/settings_Theme" />
+                        android:text="@string/Web_GB688_help" />
 
                     <View style="@style/info_View" />
 
                     <TextView
                         android:id="@+id/nightMode_textView"
                         style="@style/info_textView_button"
-                        android:text="@string/Theme_Off" />
+                        android:text="@string/Web_GB688_help_web" />
                 </LinearLayout>
 
                 <ImageView style="@style/info_ImageView_Right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/web_copy"
+                    style="@style/share_TextView"
+                    android:drawableStart="@drawable/ic_shortcut_content_copy"
+                    android:text="@string/Web_copy" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

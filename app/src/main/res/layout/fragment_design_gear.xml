@@ -21,7 +21,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/gear_intro"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textColor="@color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,19 +63,6 @@
                     android:layout_weight="1"
                     android:baselineAligned="false"
                     android:orientation="vertical">
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/gear_sigmaFP1_input"
-                        style="@style/Normal">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gear_sigmaFP1"
-                            style="@style/Normal"
-                            android:hint="@string/gear_sigmaFP1"
-                            android:imeOptions="actionDone"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/gear_sigmaHP_input"
@@ -149,18 +137,6 @@
                     android:baselineAligned="false"
                     android:orientation="vertical">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/gear_sigmaFP2_input"
-                        style="@style/Normal">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gear_sigmaFP2"
-                            style="@style/Normal"
-                            android:hint="@string/gear_sigmaFP2"
-                            android:imeOptions="actionDone"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/gear_T1_input"
@@ -312,7 +288,7 @@
                         style="@style/Normal"
                         android:hint="@string/gear_a"
                         android:imeOptions="actionDone"
-                        android:inputType="number|numberDecimal|numberSigned"
+                        android:inputType="number"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -414,21 +390,6 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/gear_b1_input"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/gear_b1"
-                            style="@style/Normal"
-                            android:hint="@string/gear_b1"
-                            android:imeOptions="actionDone"
-                            android:inputType="number|numberDecimal|numberSigned"
-                            android:textSize="16sp" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/gear_b2_input"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -438,10 +399,28 @@
                             android:id="@+id/gear_b2"
                             style="@style/Normal"
                             android:hint="@string/gear_b2"
-                            android:imeOptions="actionDone"
-                            android:inputType="number|numberDecimal|numberSigned"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gear_b1_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:helperText="@string/gear_b1_intro">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/gear_b1"
+                            style="@style/Normal"
+                            android:hint="@string/gear_b1"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -459,7 +438,7 @@
                             android:id="@+id/gear_YFS1"
                             style="@style/Normal"
                             android:hint="@string/gear_YFS1"
-                            android:imeOptions="actionDone"
+                            android:imeOptions="actionNext"
                             android:inputType="number|numberDecimal|numberSigned"
                             android:textSize="16sp" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -488,45 +467,15 @@
                     android:layout_margin="16dp"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        style="@style/Normal"
-                        android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/gear_sigma_F1"
+                        style="@style/Output_TextView"
+                        android:text="@string/gear_sigma_F1" />
 
-                        <TextView
-                            android:id="@+id/gear_sigma_F1"
-                            style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_weight="3"
-                            android:text="@string/gear_sigma_F1" />
-
-                        <TextView
-                            android:id="@+id/gear_sigma_F1_safe"
-                            style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/app_unsafe" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/Normal"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/gear_sigma_F2"
-                            style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_weight="3"
-                            android:text="@string/gear_sigma_F2" />
-
-                        <TextView
-                            android:id="@+id/gear_sigma_F2_safe"
-                            style="@style/Output_TextView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/app_unsafe" />
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/gear_sigma_F2"
+                        style="@style/Output_TextView"
+                        android:text="@string/gear_sigma_F2" />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>

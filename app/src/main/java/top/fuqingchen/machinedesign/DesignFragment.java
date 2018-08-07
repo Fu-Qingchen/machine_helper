@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Fu_Qingchen
  */
 public class DesignFragment extends Fragment {
 

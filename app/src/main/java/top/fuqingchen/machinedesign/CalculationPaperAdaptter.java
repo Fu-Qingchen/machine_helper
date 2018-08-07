@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class CalculationPaperAdaptter extends FragmentPagerAdapter {
     private Context mContext;
     private List<String> tagLists;
@@ -35,7 +38,7 @@ public class CalculationPaperAdaptter extends FragmentPagerAdapter {
             case 2:
                 return new CalculationDifferentiationFragment();
             case 3:
-                return new CalculationSafeFragment();
+                return new CalculationSolveFragment();
             default:
                 return null;
         }

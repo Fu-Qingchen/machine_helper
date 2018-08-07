@@ -18,7 +18,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="@string/key_intro"
-                android:textSize="14sp"/>
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
 
             <LinearLayout
                 style="@style/Input_LinearLayout"

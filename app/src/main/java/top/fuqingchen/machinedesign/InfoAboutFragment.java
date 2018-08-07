@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Fu_Qingchen
  */
 public class InfoAboutFragment extends Fragment {
 

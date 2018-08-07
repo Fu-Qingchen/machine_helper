@@ -2,8 +2,9 @@ package top.fuqingchen.machinedesign;
 
 /**
  * 基于 GB/T 1095-2003, GB/T 1095-2003;
+ *
+ * @author Fu_Qingchen
  */
-
 public class FlagKey {
     /**
      * 键尺寸b×h 基本尺寸系列
@@ -489,10 +490,10 @@ public class FlagKey {
 
     @Override
     public String toString() {
-        double b1low = b1_low+b;
-        double b2low = b2_low+b;
-        double b1up = b1_up+b;
-        double b2up = b2_up +b;
+        double b1low = b1_low + b;
+        double b2low = b2_low + b;
+        double b1up = b1_up + b;
+        double b2up = b2_up + b;
         return "键 " + b + " × " + h + " × " + l + "\n" +
                 "轴深 t1\t=\t" + t1 + "\t(" + t1_low + "\t,\t" + t1_up + ")\n" +
                 "毂深 t2\t=\t" + t2 + "\t(" + t2_low + "\t,\t" + t2_up + ")\n" +

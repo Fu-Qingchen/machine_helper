@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">机械设计</string>
+    <string name="app_name">机械辅助</string>
     <string name="app_packageName">top.fuqingchen.machinedesign</string>
     <string name="app_addresses">fuqingchen.gov@gmail.com</string>
-    <string name="app_subject">Android:【机械设计】</string>
+    <string name="app_subject">Android:【机械辅助】</string>
     <string name="app_Recommend">推荐</string>
     <string name="app_delete">全部清除</string>
     <string name="app_share">分享结果</string>
@@ -29,7 +29,7 @@
     <string name="main_Calculation">计算</string>
     <string name="main_Info">相关信息</string>
     <string name="developer_name">Fu_Qingchen</string>
-    <string name="design_V_belt">V 带</string>
+    <string name="design_Limits">公差</string>
     <string name="design_Gear">齿轮</string>
     <string name="design_FlatKey">平键</string>
     <string name="design_Bearing">轴承</string>
@@ -40,6 +40,13 @@
     <string name="calculation_Integration">数值积分</string>
     <string name="calculation_Matrix">方程求解</string>
     <string name="info_Settings">设置</string>
+    <string name="info_Web">国标</string>
+    <string name="info_Web_intro">注：强制性国家标准(GB)，非采标可在线阅读和下载，采标只可在线阅读；推荐性国家标准(GB/T)，非采标可在线阅读，采标只提供标准题录信息</string>
+    <string name="Web_GB688">国家标准全文公开系统</string>
+    <string name="Web_GB688_web">http://www.gb688.cn/bzgk/gb/index</string>
+    <string name="Web_GB688_help">国家标准全文公开系统说明</string>
+    <string name="Web_GB688_help_web">http://www.gb688.cn/bzgk/gb/help</string>
+    <string name="Web_copy">复制网址</string>
     <string name="info_About">关于</string>
     <string name="info_Support">支持</string>
     <string name="settings_Language">语言</string>
@@ -112,8 +119,9 @@
     <string name="gear_z2">大齿轮齿数z2</string>
     <string name="gear_mn">确定模数(计算模数)mn</string>
     <string name="gear_a">确定中心距(计算中心距)a</string>
-    <string name="gear_beta">确定螺旋角β(°)</string>
+    <string name="gear_beta">螺旋角β(°)</string>
     <string name="gear_b1">小齿轮齿宽(计算值)b1</string>
+    <string name="gear_b1_intro">b1 = b2 + (5 ~ 10)</string>
     <string name="gear_b2">大齿轮齿宽(计算值)b2</string>
     <string name="gear_d1">小齿轮分度圆直径d1</string>
     <string name="gear_da1">小齿轮齿顶圆直径da1</string>

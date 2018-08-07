@@ -12,7 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-
+/**
+ * @author Fu_Qingchen
+ */
 public class MainActivity extends AppCompatActivity {
     public DesignFragment designFragment = new DesignFragment();
     public CalculationFragment calculationFragment = new CalculationFragment();

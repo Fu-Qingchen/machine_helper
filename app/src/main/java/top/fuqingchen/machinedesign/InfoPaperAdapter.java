@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class InfoPaperAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
@@ -24,7 +27,7 @@ public class InfoPaperAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new InfoSettingsFragment();
+                return new InfoWebFragment();
             case 1:
                 return new InfoAboutFragment();
             case 2:
@@ -39,7 +42,7 @@ public class InfoPaperAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return mContext.getString(R.string.info_Settings);
+                return mContext.getString(R.string.info_Web);
             case 1:
                 return mContext.getString(R.string.info_About);
             case 2:

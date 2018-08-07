@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class DesignPaperAdapter extends FragmentStatePagerAdapter {
     /**
      * Context of the app
@@ -27,13 +30,13 @@ public class DesignPaperAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new DesignVbeltFragment();
+            return new DesignGearFragment();
             case 1:
-                return new DesignGearFragment();
+            return new DesignKeyFragment();
             case 2:
-                return new DesignKeyFragment();
+            return new DesignBearingFragment();
             case 3:
-                return new DesignBearingFragment();
+                return new DesignLimitsFragment();
             default:
                 return null;
         }
@@ -44,13 +47,13 @@ public class DesignPaperAdapter extends FragmentStatePagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return mContext.getString(R.string.design_V_belt);
-            case 1:
                 return mContext.getString(R.string.design_Gear);
-            case 2:
+            case 1:
                 return mContext.getString(R.string.design_FlatKey);
-            case 3:
+            case 2:
                 return mContext.getString(R.string.design_Bearing);
+            case 3:
+                return mContext.getString(R.string.design_Limits);
             default:
                 return null;
         }
