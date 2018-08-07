@@ -12,6 +12,9 @@ import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class OpenSourceActivity extends AppCompatActivity {
 
     @Override

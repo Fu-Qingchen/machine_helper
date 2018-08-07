@@ -13,6 +13,9 @@ import java.util.ArrayList;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class OpenSourceAdapter extends ArrayAdapter<OpenSource> {
 
     OpenSourceAdapter(Activity activity, ArrayList<OpenSource> list) {

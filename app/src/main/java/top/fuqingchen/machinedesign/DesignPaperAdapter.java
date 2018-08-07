@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class DesignPaperAdapter extends FragmentStatePagerAdapter {
     /**
      * Context of the app

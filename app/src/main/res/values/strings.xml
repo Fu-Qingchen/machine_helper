@@ -112,8 +112,9 @@
     <string name="gear_z2">大齿轮齿数z2</string>
     <string name="gear_mn">确定模数(计算模数)mn</string>
     <string name="gear_a">确定中心距(计算中心距)a</string>
-    <string name="gear_beta">确定螺旋角β(°)</string>
+    <string name="gear_beta">螺旋角β(°)</string>
     <string name="gear_b1">小齿轮齿宽(计算值)b1</string>
+    <string name="gear_b1_intro">b1 = b2 + (5 ~ 10)</string>
     <string name="gear_b2">大齿轮齿宽(计算值)b2</string>
     <string name="gear_d1">小齿轮分度圆直径d1</string>
     <string name="gear_da1">小齿轮齿顶圆直径da1</string>

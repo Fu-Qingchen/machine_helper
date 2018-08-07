@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class WelcomeActivity extends AppCompatActivity {
 
     @Override

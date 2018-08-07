@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author Fu_Qingchen
+ */
 public class GuideActivity extends AppCompatActivity {
 
     @Override
