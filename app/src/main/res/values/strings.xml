@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">机械辅助</string>
+    <string name="app_name">Machine Helper</string>
     <string name="app_packageName">top.fuqingchen.machinedesign</string>
     <string name="app_addresses">fuqingchen.gov@gmail.com</string>
-    <string name="app_subject">Android:【机械辅助】</string>
+    <string name="app_subject">Android:【Machine Helper】</string>
     <string name="app_Recommend">推荐</string>
     <string name="app_delete">全部清除</string>
     <string name="app_share">分享结果</string>
@@ -27,7 +27,7 @@
     <string name="copyright">Developed by Fu_Qingchen in China.</string>
     <string name="main_Design">设计</string>
     <string name="main_Calculation">计算</string>
-    <string name="main_Info">相关信息</string>
+    <string name="main_Info">信息</string>
     <string name="developer_name">Fu_Qingchen</string>
     <string name="design_Limits">公差</string>
     <string name="design_Gear">齿轮</string>
@@ -35,6 +35,10 @@
     <string name="design_Bearing">轴承</string>
     <string name="design_top">上偏差</string>
     <string name="design_button">下偏差</string>
+    <string name="limits_D">公称尺寸</string>
+    <string name="limits_GongCha">基本偏差代号</string>
+    <string name="limits_IT">标准公差等级</string>
+    <string name="limits_GB">(GB/T 1800.1—2009)</string>
     <string name="calculation_Interpolation">线性插值</string>
     <string name="calculation_Differentiation">数值微分</string>
     <string name="calculation_Integration">数值积分</string>
@@ -57,7 +61,7 @@
     <string name="Theme_On">开启</string>
     <string name="Theme_Off">关闭</string>
     <string name="Theme_Automatic">自动(日落时开启)</string>
-    <string name="about_intro">"       软件的相关介绍现在还没有想想好，不过我会再过 几天补充上去。先用这些字代替一下反正是凑字数。这 个LOGO也是这样的"</string>
+    <string name="about_intro">用于辅助机械设计计算的计算器</string>
     <string name="about_Contact_Feedback">联系与反馈</string>
     <string name="contact_Rate">评分</string>
     <string name="contact_Intro">如果你喜欢这个应用，欢迎和我联系</string>
@@ -67,7 +71,7 @@
     <string name="development_code">源代码(Github)</string>
     <string name="about_Development_Related">开发相关</string>
     <string name="development_Components">使用到的开源组件</string>
-    <string name="state_main">"       本程序为免费无广告应用，如您是在别处花钱买来的 或发现应用内有广告，那么你已上当或使用了盗版。请在 酷安等应用商店下载，有广告的均为恶意篡改版。本应用 欢迎转载推荐~"</string>
+    <string name="state_main">"       本程序为免费无广告应用，如你是在别处花了钱或发现应用内有广告，那么你已上当或使用了盗版。该应用的官方渠道为Github，欢迎转载推荐~"</string>
     <string name="about_State">申明</string>
     <string name="support_Red_Envelope">领取红包支持</string>
     <string name="redEnvelope_intro">"领取支付宝邀请红包支持开发者 "</string>
@@ -77,7 +81,7 @@
     <string name="donation_wachat">微信</string>
     <string name="donation_QQ">QQ</string>
     <string name="donation_thanks">感谢你的支持</string>
-    <string name="support_intro">如果你喜欢本应用，并想让本应用一直活下去，欢迎捐赠！你们 的支持将是我一直更新下去的动力~</string>
+    <string name="support_intro">如果你喜欢本应用，并想让本应用一直活下去，欢迎捐赠！你们的支持将是我一直更新下去的动力~</string>
     <string name="vbelt_KA">工况系数KA</string>
     <string name="vbelt_P">输入功率P</string>
     <string name="vbelt_n1">输入转速n1</string>
@@ -206,7 +210,7 @@
     <string name="calculation_result">计算结果</string>
     <string name="calculation_result_info">注：计算结果有效数字为8位</string>
     <string name="calculation_result_info2">注：计算结果有效数字为8位，若方程有多解，给出随机解</string>
-    <string name="calculation_function">方程f(x)=</string>
+    <string name="calculation_function">函数f(x)=</string>
     <string name="differentiation_x">待求点</string>
     <string name="differentiation_x_tooMuch">警告：该值超过10^6时，计算精度会下降</string>
     <string name="differentiation_y0">0阶导数</string>

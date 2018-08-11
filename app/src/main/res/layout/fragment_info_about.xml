@@ -29,7 +29,8 @@
                 <TextView
                     android:id="@+id/language_textView"
                     style="@style/info_textView_button"
-                    android:text="@string/about_intro" />
+                    android:text="@string/about_intro"
+                    android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
 

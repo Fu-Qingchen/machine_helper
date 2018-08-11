@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".GuideActivity">
+        tools:context=".GuideActivity"
+        android:layout_gravity="center_vertical">
 
         <ImageView
             android:layout_width="100dp"
@@ -99,19 +100,35 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:text="@string/guide_intro_3"
-                    android:textSize="16sp"
-                    android:layout_gravity="center_vertical"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
         </LinearLayout>
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/guide_finish"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/guide_finish"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:text="@string/app_finish" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="@string/app_finish"
-                android:layout_gravity="end" />
+                android:layout_gravity="bottom"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/copyright"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
     </LinearLayout>
 </ScrollView>

@@ -3,315 +3,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:focusable="true"
     android:focusableInTouchMode="true"
     tools:context=".DesignLimitsFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/app_coming_soon"
-        android:textSize="48sp"/>
-
-    <!--<ScrollView-->
+    <!--<TextView-->
     <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent">-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/app_coming_soon"-->
+    <!--android:textSize="48sp"/>-->
 
-    <!--<LinearLayout style="@style/Main_LinearLayout">-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout style="@style/Main_LinearLayout">
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
 
-    <!--<LinearLayout-->
-    <!--style="@style/Input_LinearLayout"-->
-    <!--android:orientation="vertical">-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/limits_D_input"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
 
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:baselineAligned="false"-->
-    <!--android:orientation="horizontal">-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/limits_D"
+                        style="@style/Normal"
+                        android:hint="@string/limits_D"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
 
-    <!--<com.google.android.material.textfield.TextInputLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1">-->
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
 
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_KA"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_KA"-->
-    <!--android:imeOptions="actionNext"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/limits_GongCha"
+                        android:layout_gravity="center_vertical"/>
 
-    <!--<com.google.android.material.textfield.TextInputLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1">-->
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/limits_GongCha"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown">
+                    </androidx.appcompat.widget.AppCompatSpinner>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Input_LinearLayout"
+                android:orientation="vertical">
 
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_P"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_P"-->
-    <!--android:imeOptions="actionNext"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
-    <!--</LinearLayout>-->
+                <LinearLayout
+                    style="@style/Normal"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
 
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:baselineAligned="false"-->
-    <!--android:orientation="horizontal">-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/limits_IT"
+                        android:layout_gravity="center_vertical"/>
 
-    <!--<com.google.android.material.textfield.TextInputLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1">-->
-
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_n1"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_n1"-->
-    <!--android:imeOptions="actionNext"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
-
-    <!--<com.google.android.material.textfield.TextInputLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1">-->
-
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_n2"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_n2"-->
-    <!--android:imeOptions="actionDone"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
-    <!--</LinearLayout>-->
-    <!--</LinearLayout>-->
-
-    <!--<com.google.android.material.card.MaterialCardView style="@style/Output_CardView">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_Pc"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_margin="16dp"-->
-    <!--android:text="@string/vbelt_Pc" />-->
-
-    <!--</com.google.android.material.card.MaterialCardView>-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Input_LinearLayout"-->
-    <!--android:orientation="vertical">-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:baselineAligned="false"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<com.google.android.material.textfield.TextInputLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1">-->
-
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_type"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_type"-->
-    <!--android:imeOptions="actionNext"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
-
-    <!--<com.google.android.material.textfield.TextInputLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1">-->
-
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_d1"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_d1"-->
-    <!--android:imeOptions="actionDone"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
-    <!--</LinearLayout>-->
-    <!--</LinearLayout>-->
-
-    <!--<com.google.android.material.card.MaterialCardView style="@style/Output_CardView">-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:layout_margin="16dp"-->
-    <!--android:orientation="vertical">-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_v"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_v" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_d2"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_d2" />-->
-    <!--</LinearLayout>-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_delta"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:text="@string/vbelt_delta" />-->
-    <!--</LinearLayout>-->
-    <!--</com.google.android.material.card.MaterialCardView>-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Input_LinearLayout"-->
-    <!--android:orientation="vertical">-->
-
-    <!--<com.google.android.material.textfield.TextInputLayout style="@style/Normal">-->
-
-    <!--<com.google.android.material.textfield.TextInputEditText-->
-    <!--android:id="@+id/vbelt_a0"-->
-    <!--style="@style/Normal"-->
-    <!--android:hint="@string/vbelt_a0"-->
-    <!--android:imeOptions="actionDone"-->
-    <!--android:inputType="number|numberDecimal|numberSigned"-->
-    <!--android:textSize="16sp" />-->
-    <!--</com.google.android.material.textfield.TextInputLayout>-->
-    <!--</LinearLayout>-->
-
-    <!--<com.google.android.material.card.MaterialCardView style="@style/Output_CardView">-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:layout_margin="16dp"-->
-    <!--android:orientation="vertical">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_L"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_height="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_L" />-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_a"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_a" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_amin"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_amin" />-->
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_alpha"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_alpha" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_amax"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_amax" />-->
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_i"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_i" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_z"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_z" />-->
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_F0"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_F0" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_FQ"-->
-    <!--style="@style/Output_TextView"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="@string/vbelt_FQ" />-->
-    <!--</LinearLayout>-->
-    <!--</LinearLayout>-->
-    <!--</com.google.android.material.card.MaterialCardView>-->
-
-    <!--<LinearLayout-->
-    <!--style="@style/Normal"-->
-    <!--android:layout_marginTop="8dp"-->
-    <!--android:baselineAligned="false"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<LinearLayout-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="1"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_delete"-->
-    <!--style="@style/share_TextView"-->
-    <!--android:drawableStart="@drawable/ic_shortcut_delete"-->
-    <!--android:text="@string/app_delete" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/vbelt_copy"-->
-    <!--style="@style/share_TextView"-->
-    <!--android:drawableStart="@drawable/ic_shortcut_content_copy"-->
-    <!--android:text="@string/app_copy" />-->
-    <!--</LinearLayout>-->
-    <!--</LinearLayout>-->
-    <!--</LinearLayout>-->
-    <!--</ScrollView>-->
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/limits_IT"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown">
+                    </androidx.appcompat.widget.AppCompatSpinner>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/limits_GB"
+                android:layout_marginTop="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_coming_soon"
+                android:gravity="center"
+                android:textSize="48sp"
+                android:layout_marginTop="32dp"/>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
